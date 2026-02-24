@@ -2,36 +2,35 @@ import asyncio
 import multiprocessing
 import threading
 import random
-import time
 import math
 from datetime import datetime
 import concurrent.futures
+import queue
 
-# SPECIFICATII MOTOR (CONSTANTE DE FABRICA)
-# NUMAR_NUCLEE = multiprocessing.cpu_count()
-# TEMP_AMBIENTALA = 25.0
-# TEMP_NOMINALA = 90.0    
-# TEMP_CRITICA = 150.0    
-# RATE_RACIRE = 8.0       
-
-# PECIFICATII SARCINA (TASK)
-# INCALZIRE_NORMAL = 15.0  
-# INCALZIRE_AGRESIV = 60.0 
-
+# --- CONFIGURARE PROCES (SAFE / DURABLE MODE) ---
 NUMAR_NUCLEE = multiprocessing.cpu_count()
 TEMP_AMBIENTALA = 25.0
-TEMP_NOMINALA = 50.0    # Temperatura optima
-TEMP_CRITICA = 150.0    # Temperatura de avarie
-RATE_RACIRE = 6.0       # Grade disipate pe secunda
+TEMP_NOMINALA = 50.0   
+TEMP_CRITICA = 180.0   
+RATE_RACIRE = 25.0     
+# --- PARAMETRI SARCINA ---
+INCALZIRE_NORMAL = 15.0
+INCALZIRE_AGRESIV = 60 
 
-INCALZIRE_NORMAL = 25.0  
-INCALZIRE_AGRESIV = 90.0 
+# --- PARAMETRI VIBRATII (mm/s) ---
+VIB_IDLE_MIN = 0.5
+VIB_IDLE_MAX = 2.0
+VIB_NORMAL = 5.0        
+VIB_AGRESIV = 30.0  
 
-# --- PARAMETRI UZURA (Legea lui Arrhenius) ---
-# Uzura de baza la temperatura nominala (foarte mica)
-UZURA_BAZA = 0.05 
-# Factor de accelerare (cat de mult penalizam caldura excesiva)
-FACTOR_PENALIZARE = 0.05
+# --- PARAMETRI DISTRUGERE () ---
+# Termic:
+UZURA_BAZA_TERMICA = 0.02 
+FACTOR_EXP_TERMIC = 8.0  
+
+# Mecanic (Vibratii):
+PRAG_VIB_DAUNA = 15.0    
+FACTOR_VIB = 0.05    
 
 class Motor:
     def __init__(self, motor_id, log_queue, executor):
@@ -41,178 +40,226 @@ class Motor:
         self.running = False
         self.queue = asyncio.Queue()
         self._consumer_task = None
+        self._stopped_logged = False # Flag pentru a preveni logare dubla
         
         # Stare Fizica
         self.temperatura = TEMP_AMBIENTALA
-        self.sanatate_izolatie = 100.0 # Procentaj ramas
-        self.last_update_time = time.time()
+        self.vibratie = 0.0     
+        self.sanatate = 100.0   
 
     def _log(self, msg):
         self.log_queue.put((datetime.now(), f"[MOTOR {self.motor_id}] {msg}"))
 
     def _get_stare_tehnica(self):
-        # Clasificare realista a starii motorului
-        h = self.sanatate_izolatie
-        if h > 95: return "NOU (PERFECT)"
-        if h > 80: return "BUN"
+        h = self.sanatate
+        if h > 95: return "NOU (RODAT)"
+        if h > 80: return "UZURA NORMALA"
         if h > 50: return "UZURA MEDIE"
-        if h > 20: return "CRITIC (SERVICE NECESAR)"
-        if h > 0:  return "AVARIE IMINENTA"
-        return "DEFECT (ARS)"
+        if h > 20: return "NECESITA REVIZIE"
+        if h > 0:  return "CRITIC"
+        return "DEFECT"
 
     async def start(self):
         self.running = True
-        self.last_update_time = time.time()
-        self._log(f"ONLINE | T: {self.temperatura:.1f}C")
+        self.vibratie = random.uniform(VIB_IDLE_MIN, VIB_IDLE_MAX)
+        self._log(f"ONLINE | T: {self.temperatura:.1f}C | HP: {100}%")
         self._consumer_task = asyncio.create_task(self._proceseaza_coada())
 
     async def stop(self):
-        self.running = False
-        if self._consumer_task:
-            self._consumer_task.cancel()
+        # PROTECTIE IMPORTANTA: Daca e deja oprit, nu facem nimic.
+        if not self.running and self._stopped_logged: return
         
-        stare_text = self._get_stare_tehnica()
-        self._log(f"OFFLINE | T_final: {self.temperatura:.1f}C | Sanatate: {self.sanatate_izolatie:.2f}% [{stare_text}]")
+        self.running = False
+        
+        if self._consumer_task:
+            try:
+                # Asteptam maxim 1 secunda sa termine ce are de facut
+                await asyncio.wait_for(self._consumer_task, timeout=1.0)
+            except (asyncio.CancelledError, asyncio.TimeoutError):
+                self._consumer_task.cancel()
+        
+        # Logam o singura data
+        if not self._stopped_logged:
+            self._stopped_logged = True
+            stare_detaliata = self._get_stare_tehnica()
+            self._log(f"OFFLINE | Final HP: {max(0.0, self.sanatate):.2f}% [{stare_detaliata}]")
 
     async def adauga_task(self, task_id, este_agresiv):
         if not self.running: return
-        # Daca motorul este ars (0%), nu mai accepta comenzi
-        if self.sanatate_izolatie <= 0:
-            return 
         await self.queue.put((task_id, este_agresiv))
 
     async def _proceseaza_coada(self):
         while self.running:
             try:
-                start_wait = time.time()
                 try:
-                    pack = await asyncio.wait_for(self.queue.get(), timeout=0.2)
-                    task_id, este_agresiv = pack
+                    pack = await asyncio.wait_for(self.queue.get(), timeout=0.1)
                 except asyncio.TimeoutError:
-                    self._update_temp(0.2, sarcina_grade=0)
+                    if self.sanatate > 0:
+                        self._simulare_fizica(0.1, sarcina=False, agresiv=False)
                     continue
 
-                timp_idle = time.time() - start_wait
-                self._update_temp(timp_idle, sarcina_grade=0)
+                task_id, este_agresiv = pack
 
-                # Daca inca mai are viata, executa task-ul
-                if self.sanatate_izolatie > 0:
-                    await self._executa_task(task_id, este_agresiv)
-                else:
-                    self._log(f"REFUZ {task_id}: Motor defect.")
-                
+                # Daca e mort, marcam task-ul ca rezolvat si trecem mai departe
+                # pentru a nu bloca coada (queue.join)
+                if self.sanatate <= 0:
+                    self.queue.task_done()
+                    continue
+
+                await self._executa_task(task_id, este_agresiv)
                 self.queue.task_done()
 
             except asyncio.CancelledError:
                 break
+            except Exception as e:
+                self._log(f"ERR: {e}")
+                break
 
-    def _update_temp(self, durata, sarcina_grade=0.0):
+    def _simulare_fizica(self, durata, sarcina=False, agresiv=False):
+        if self.sanatate <= 0: return 0
+
+        # 1. Temperatura
         racire = RATE_RACIRE * durata
-        incalzire = sarcina_grade * durata
-        noua_temp = self.temperatura + incalzire - racire
-        # Temperatura nu scade sub cea ambientala
-        self.temperatura = max(TEMP_AMBIENTALA, noua_temp)
+        incalzire_val = 0
+        if sarcina:
+            base_heat = INCALZIRE_AGRESIV if agresiv else INCALZIRE_NORMAL
+            incalzire_val = base_heat * durata
+        
+        self.temperatura = max(TEMP_AMBIENTALA, self.temperatura + incalzire_val - racire)
+
+        # 2. Vibratii
+        if sarcina:
+            base_vib = VIB_AGRESIV if agresiv else VIB_NORMAL
+        else:
+            base_vib = random.uniform(VIB_IDLE_MIN, VIB_IDLE_MAX)
+        
+        self.vibratie = base_vib * random.uniform(0.9, 1.1)
+
+        # 3. Uzura
+        return self._aplica_uzura(durata)
+
+    def _aplica_uzura(self, durata):
+        # A. Uzura Termica
+        delta_t = max(0, self.temperatura - TEMP_NOMINALA)
+        dauna_termica = 0
+        if delta_t > 0:
+            factor_t = math.pow(FACTOR_EXP_TERMIC, delta_t / 30.0)
+            dauna_termica = (UZURA_BAZA_TERMICA * factor_t) * durata
+
+        # B. Uzura Mecanica
+        dauna_mecanica = 0
+        if self.vibratie > PRAG_VIB_DAUNA:
+            exces = self.vibratie - PRAG_VIB_DAUNA
+            dauna_mecanica = (exces * FACTOR_VIB) * durata
+
+        dauna_totala = dauna_termica + dauna_mecanica
+        self.sanatate = max(0.0, self.sanatate - dauna_totala)
+        return dauna_totala
 
     async def _executa_task(self, task_id, este_agresiv):
-        # PROTECTIE TERMICA
+        if self.sanatate <= 0: return
+
+        # Protectie Termica
         if self.temperatura > TEMP_CRITICA:
-            self._log(f"PROTECTIE ACTIVA ({self.temperatura:.1f}C). Racire fortata...")
-            while self.temperatura > (TEMP_CRITICA - 30):
-                await asyncio.sleep(0.5)
-                self._update_temp(0.5, sarcina_grade=0)
-            self._log(f"RESET PROTECTIE. T={self.temperatura:.1f}C. Se reia lucrul.")
+            self._log(f"!!! PROTECTIE ({self.temperatura:.0f}C). Racire...")
+            while self.temperatura > (TEMP_NOMINALA + 40):
+                if self.sanatate <= 0 or not self.running: break
+                await asyncio.sleep(0.2)
+                self._simulare_fizica(0.2, sarcina=False)
+            
+            if self.sanatate <= 0: return 
+            self._log("REPORNIRE.")
 
-        rata_incalzire = INCALZIRE_AGRESIV if este_agresiv else INCALZIRE_NORMAL
         tip_task = "AGRESIV" if este_agresiv else "NORMAL"
+        durata = random.uniform(0.3, 0.6)
         
-        self._log(f"START {task_id} [{tip_task}] | T_start: {self.temperatura:.1f}C")
-        
-        # Simulare durata variabila
-        durata_task = random.uniform(0.5, 0.8)
-        
-        # Calcule CPU
+        # CPU Load (trimis in executor)
         loop = asyncio.get_running_loop()
-        await loop.run_in_executor(self.executor, functie_cpu, [1]*3000)
-        await asyncio.sleep(durata_task)
+        await loop.run_in_executor(self.executor, sum, [1]*5000)
+        await asyncio.sleep(durata)
 
-        # Actualizare finala
-        self._update_temp(durata_task, sarcina_grade=rata_incalzire)
-        hp_inainte = self.sanatate_izolatie
-        uzura = self._calculeaza_uzura() # Aici se scade din hp curent
-        hp_dupa = self.sanatate_izolatie        
-        # Mesaj de avertizare doar daca uzura e semnificativa
-        detalii_uzura = f" | HP: {hp_inainte:.2f}% -> {hp_dupa:.2f}% (-{uzura:.2f}%)" if uzura > 1 else f" | HP: {hp_dupa:.2F}% (Stable)"
-
-        self._log(f"GATA {task_id} [{tip_task}] | T: {self.temperatura:.0f}C{detalii_uzura}")
-
-    def _calculeaza_uzura(self):
-        # Uzura apare doar daca depasim temperatura nominala (50C)
-        delta = max(0, self.temperatura - TEMP_NOMINALA)
+        pierdere = self._simulare_fizica(durata, sarcina=True, agresiv=este_agresiv)
         
-        if delta == 0:
-            scadere = 0.005 # Uzura neglijabila naturala
-        else:
-            # Formula Exponentiala (Calibrata sa nu distruga instant motorul)
-            # La fiecare 10 grade peste, uzura creste
-            factor = math.pow(1.5, delta / 10.0) 
-            scadere = FACTOR_PENALIZARE * factor
-
-        # Aplicam scaderea dar NU coboram sub 0
-        noua_sanatate = self.sanatate_izolatie - scadere
-        self.sanatate_izolatie = max(0.0, noua_sanatate)
+        # Logare inteligenta
+        hp_info = ""
+        if pierdere > 0.5 or self.sanatate < 50:
+             hp_info = f" | HP: {self.sanatate:.1f}% (-{pierdere:.2f}%)"
         
-        return scadere
+        if self.sanatate <= 0: 
+            hp_info = " [MORT]"
+            # Fortam 0.0% vizual daca a murit
+            self.sanatate = 0.0
 
-def functie_cpu(d): return sum(d)
+        self._log(f"DONE {task_id} [{tip_task}] | T:{self.temperatura:.0f}C V:{self.vibratie:.0f}mm/s{hp_info}")
 
-# --- SYSTEM LOGGER ---
+# --- LOGGER ---
 def logger_thread(q):
-    with open("monitorizare_motoare.log", "a", encoding="utf-8", buffering=1) as f:
-        f.write(f"\n--- SESIUNE NOUA: {datetime.now()} ---\n")
-        while True:
-            item = q.get()
-            if item == "STOP": 
-                f.write(f"--- FINAL SESIUNE: {datetime.now()} ---\n")
-                break
-            ts, msg = item
-            log_line = f"[{ts.strftime('%H:%M:%S.%f')[:-3]}] {msg}"
-            print(log_line)
+    nume_fisier = "motoare_log.txt"
+    # Mod 'w' la start pentru a curata sesiunea veche
+    with open(nume_fisier, "w", encoding="utf-8") as f:
+        f.write(f"{'='*40}\nSIMULARE START: {datetime.now()}\n{'='*40}\n")
+    
+    while True:
+        item = q.get()
+        if item == "STOP":
+            msg_stop = "--- STOP SESIUNE ---"
+            print(msg_stop, flush=True)
+            with open(nume_fisier, "a", encoding="utf-8") as f:
+                f.write(msg_stop + "\n")
+            break
+        
+        ts, msg = item
+        ts_str = ts.strftime('%H:%M:%S.%f')[:-3]
+        log_line = f"[{ts_str}] {msg}"
+        
+        print(log_line, flush=True)
+        with open(nume_fisier, "a", encoding="utf-8") as f:
             f.write(log_line + "\n")
 
-def log_sys(q, m, wait:bool=True): q.put((datetime.now(), f"[SISTEM] {m}")) if wait else q.putnowait((datetime.now(), f"[SISTEM] {m}")) 
+def log_sys(q, m): q.put((datetime.now(), f"[SISTEM] {m}"))
 
 # --- MAIN ---
 async def main():
-    m = multiprocessing.Manager()
-    log_q = m.Queue()
-    threading.Thread(target=logger_thread, args=(log_q,), daemon=True).start()
+    # MODIFICARE CRITICA: Folosim Queue normal (threading), nu Multiprocessing Manager
+    # Deoarece motoarele sunt instante in procesul principal, nu avem nevoie de IPC pentru loguri.
+    # Asta elimina duplicarea si erorile de flush.
+    log_q = queue.Queue()
+    
+    # Logger-ul nu mai este daemon, il controlam manual
+    t_log = threading.Thread(target=logger_thread, args=(log_q,))
+    t_log.start()
 
-    SANSA_AGRESIV = 0.4 # 40% sansa de task agresiv
+    log_sys(log_q, f"START SIMULARE ({NUMAR_NUCLEE} MOTOARE)")
 
-    log_sys(log_q, f"Initializare flota: {NUMAR_NUCLEE} motoare.")
-    log_sys(log_q, f"Parametri: Nom={TEMP_NOMINALA}C, Crit={TEMP_CRITICA}C")
-
+    # Context Manager pentru Executor asigura inchiderea corecta a proceselor de calcul
     with concurrent.futures.ProcessPoolExecutor(max_workers=NUMAR_NUCLEE) as exc:
         motoare = [Motor(i+1, log_q, exc) for i in range(NUMAR_NUCLEE)]
         await asyncio.gather(*(mot.start() for mot in motoare))
 
-        log_sys(log_q, ">>> INCEPE CICLUL DE PRODUCTIE (200 Task-uri) <<<")
+        log_sys(log_q, ">>> SARCINA INTENSIVA (300 JOB-URI) <<<")
 
-        for i in range(200):
-            este_agresiv = random.random() < SANSA_AGRESIV
+        for i in range(300):
+            este_agresiv = random.random() < 0.5 
             motor = motoare[i % NUMAR_NUCLEE]
-            task_name = f"JOB-{100+i}"
-            if este_agresiv: task_name += "-AGR"
-            
-            await motor.adauga_task(task_name, este_agresiv)
-            await asyncio.sleep(0.02) # Ritm rapid
+            await motor.adauga_task(f"JOB-{100+i}", este_agresiv)
+            await asyncio.sleep(0.005)
 
-        log_sys(log_q, ">>> Comenzi finalizate. Asteptare executie... <<<")
+        log_sys(log_q, ">>> Asteptare finalizare sarcini... <<<")
+        # Asteptam golirea cozilor de executie
         await asyncio.gather(*(mot.queue.join() for mot in motoare))
         
-        log_sys(log_q, ">>> RAPORT FINAL STARE FLOTA <<<")
+        log_sys(log_q, ">>> Oprire Motoare... <<<")
+        # Oprirea este acum idempotenta si sigura
         await asyncio.gather(*(mot.stop() for mot in motoare))
+        
+        # Semnal de oprire pentru logger DOAR DUPA ce totul e gata
         log_q.put("STOP")
+        
+    # Asteptam thread-ul de logging sa termine scrierea
+    t_log.join()
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        pass
