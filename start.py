@@ -6,7 +6,7 @@ import math
 from datetime import datetime
 import concurrent.futures
 import queue
-
+import matplotlib.pyplot as plt
 # --- CONFIGURARE PROCES (SAFE / DURABLE MODE) ---
 NUMAR_NUCLEE = multiprocessing.cpu_count()
 TEMP_AMBIENTALA = 25.0
@@ -34,6 +34,8 @@ FACTOR_VIB = 0.05
 
 class Motor:
     def __init__(self, motor_id, log_queue, executor):
+        self.hp_history = [100.0]
+        self.task_count=[0]
         self.motor_id = motor_id
         self.log_queue = log_queue
         self.executor = executor
@@ -105,9 +107,10 @@ class Motor:
                 if self.sanatate <= 0:
                     self.queue.task_done()
                     continue
-
                 await self._executa_task(task_id, este_agresiv)
                 self.queue.task_done()
+                self.hp_history.append(self.sanatate)   # <--- append only once per task
+                self.task_count.append(len(self.task_count))
 
             except asyncio.CancelledError:
                 break
@@ -122,8 +125,8 @@ class Motor:
         racire = RATE_RACIRE * durata
         incalzire_val = 0
         if sarcina:
-            base_heat = INCALZIRE_AGRESIV if agresiv else INCALZIRE_NORMAL
-            incalzire_val = base_heat * durata
+            temperatura_de_baza = INCALZIRE_AGRESIV if agresiv else INCALZIRE_NORMAL
+            incalzire_val = temperatura_de_baza * durata
         
         self.temperatura = max(TEMP_AMBIENTALA, self.temperatura + incalzire_val - racire)
 
@@ -143,9 +146,7 @@ class Motor:
         delta_t = max(0, self.temperatura - TEMP_NOMINALA)
         dauna_termica = 0
         if delta_t > 0:
-            factor_t = math.pow(FACTOR_EXP_TERMIC, delta_t / 30.0)
-            dauna_termica = (UZURA_BAZA_TERMICA * factor_t) * durata
-
+            dauna_termica = (UZURA_BAZA_TERMICA * math.pow(FACTOR_EXP_TERMIC, delta_t / 30.0)) * durata
         # B. Uzura Mecanica
         dauna_mecanica = 0
         if self.vibratie > PRAG_VIB_DAUNA:
@@ -158,7 +159,7 @@ class Motor:
 
     async def _executa_task(self, task_id, este_agresiv):
         tip_task = "A" if este_agresiv else "N"
-        durata = random.uniform(0.3, 0.6)
+        durata = random.uniform(0.7, 1.0)
         if self.sanatate <= 0: return
         if self.temperatura > TEMP_CRITICA:
             self._log(f"! PROTECTIE ({self.temperatura:.0f}C). Racire...")
@@ -169,18 +170,17 @@ class Motor:
             if self.sanatate <= 0: return 
             self._log("REPORNIRE.")
         else:
-            self._log(f"inceput {task_id} [{tip_task}] | T:{self.temperatura:.0f}C V:{self.vibratie:.0f}mm/s{self.sanatate:.1f}")
+            self._log(f"inceput {task_id} [{tip_task}] | T:{self.temperatura:.0f}C V:{self.vibratie:.0f}mm/s Hp:{self.sanatate:.1f}%")
         
         loop = asyncio.get_running_loop()
         await loop.run_in_executor(self.executor, sum, [1]*5000)
         await asyncio.sleep(durata)
-
         pierdere = self._simulare_fizica(durata, sarcina=True, agresiv=este_agresiv)
-        
+
         # Logare inteligenta
         hp_info = ""
         if pierdere > 0.5 or self.sanatate < 50:
-             hp_info = f" | HP: {self.sanatate:.1f}% (-{pierdere:.2f}%)"
+             hp_info = f" | Hp: {self.sanatate:.1f}% (-{pierdere:.2f}%)"
         
         if self.sanatate <= 0: 
             hp_info = " [MORT]"
@@ -246,9 +246,25 @@ async def main():
         
         # Semnal de oprire pentru logger DOAR DUPA ce totul e gata
         log_q.put("STOP")
-        
+
+        plt.close()
     # Asteptam thread-ul de logging sa termine scrierea
     t_log.join()
+    plt.figure()
+    plt.get_current_fig_manager().resize(1080,720)
+    for motor in motoare:
+        plt.plot(motor.hp_history, label=f"{motor.motor_id+1}")
+
+    plt.xlabel("Evenimente / Job-uri")
+    plt.ylabel("HP (%)")
+    plt.title("Curba de degradare per motor")
+    plt.grid(True)
+
+    # Legendă compactă
+    plt.legend(title="Motoare", ncol=4, fontsize=8)  # 4 coloane pentru 16 motoare
+    plt.tight_layout()
+    plt.show()
+
 
 if __name__ == "__main__":
     try:

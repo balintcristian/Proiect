@@ -1,643 +1,524 @@
 ========================================
-SIMULARE START: 2026-02-25 08:39:57.806175
+SIMULARE START: 2026-02-25 13:31:23.303781
 ========================================
-[08:39] [SISTEM] START SIMULARE (16 MOTOARE)
-[08:39] [MOTOR 1] ONLINE | T: 25.0C | HP: 100%
-[08:39] [MOTOR 2] ONLINE | T: 25.0C | HP: 100%
-[08:39] [MOTOR 3] ONLINE | T: 25.0C | HP: 100%
-[08:39] [MOTOR 4] ONLINE | T: 25.0C | HP: 100%
-[08:39] [MOTOR 5] ONLINE | T: 25.0C | HP: 100%
-[08:39] [MOTOR 6] ONLINE | T: 25.0C | HP: 100%
-[08:39] [MOTOR 7] ONLINE | T: 25.0C | HP: 100%
-[08:39] [MOTOR 8] ONLINE | T: 25.0C | HP: 100%
-[08:39] [MOTOR 9] ONLINE | T: 25.0C | HP: 100%
-[08:39] [MOTOR 10] ONLINE | T: 25.0C | HP: 100%
-[08:39] [MOTOR 11] ONLINE | T: 25.0C | HP: 100%
-[08:39] [MOTOR 12] ONLINE | T: 25.0C | HP: 100%
-[08:39] [MOTOR 13] ONLINE | T: 25.0C | HP: 100%
-[08:39] [MOTOR 14] ONLINE | T: 25.0C | HP: 100%
-[08:39] [MOTOR 15] ONLINE | T: 25.0C | HP: 100%
-[08:39] [MOTOR 16] ONLINE | T: 25.0C | HP: 100%
-[08:39] [SISTEM] >>> SARCINA INTENSIVA (300 JOB-URI) <<<
-[08:39] [MOTOR 1] inceput JOB-100 [N] | T:25C V:1mm/s100.0
-[08:39] [MOTOR 2] inceput JOB-101 [N] | T:25C V:1mm/s100.0
-[08:39] [MOTOR 3] inceput JOB-102 [N] | T:25C V:1mm/s100.0
-[08:39] [MOTOR 4] inceput JOB-103 [A] | T:25C V:2mm/s100.0
-[08:39] [MOTOR 5] inceput JOB-104 [A] | T:25C V:1mm/s100.0
-[08:39] [MOTOR 6] inceput JOB-105 [A] | T:25C V:1mm/s100.0
-[08:39] [MOTOR 7] inceput JOB-106 [N] | T:25C V:1mm/s100.0
-[08:39] [MOTOR 8] inceput JOB-107 [N] | T:25C V:2mm/s100.0
-[08:39] [MOTOR 9] inceput JOB-108 [A] | T:25C V:1mm/s100.0
-[08:39] [MOTOR 10] inceput JOB-109 [N] | T:25C V:2mm/s100.0
-[08:39] [MOTOR 11] inceput JOB-110 [A] | T:25C V:2mm/s100.0
-[08:39] [MOTOR 12] inceput JOB-111 [N] | T:25C V:2mm/s100.0
-[08:39] [MOTOR 13] inceput JOB-112 [A] | T:25C V:1mm/s100.0
-[08:39] [MOTOR 14] inceput JOB-113 [N] | T:25C V:2mm/s100.0
-[08:39] [MOTOR 15] inceput JOB-114 [N] | T:25C V:1mm/s100.0
-[08:39] [MOTOR 16] inceput JOB-115 [A] | T:25C V:1mm/s100.0
-[08:39] [MOTOR 15] terminat JOB-114 [N] | T:25C V:5mm/s
-[08:39] [MOTOR 15] inceput JOB-130 [N] | T:25C V:5mm/s100.0
-[08:39] [MOTOR 12] terminat JOB-111 [N] | T:25C V:5mm/s
-[08:39] [MOTOR 12] inceput JOB-127 [A] | T:25C V:5mm/s100.0
-[08:39] [MOTOR 11] terminat JOB-110 [A] | T:38C V:32mm/s
-[08:39] [MOTOR 1] terminat JOB-100 [N] | T:25C V:5mm/s
-[08:39] [MOTOR 11] inceput JOB-126 [N] | T:38C V:32mm/s99.7
-[08:39] [MOTOR 1] inceput JOB-116 [N] | T:25C V:5mm/s100.0
-[08:39] [MOTOR 5] terminat JOB-104 [A] | T:39C V:30mm/s
-[08:39] [MOTOR 5] inceput JOB-120 [N] | T:39C V:30mm/s99.7
-[08:39] [MOTOR 4] terminat JOB-103 [A] | T:40C V:29mm/s
-[08:39] [MOTOR 10] terminat JOB-109 [N] | T:25C V:5mm/s
-[08:39] [MOTOR 4] inceput JOB-119 [N] | T:40C V:29mm/s99.7
-[08:39] [MOTOR 10] inceput JOB-125 [A] | T:25C V:5mm/s100.0
-[08:39] [MOTOR 8] terminat JOB-107 [N] | T:25C V:5mm/s
-[08:39] [MOTOR 6] terminat JOB-105 [A] | T:40C V:31mm/s
-[08:39] [MOTOR 3] terminat JOB-102 [N] | T:25C V:5mm/s
-[08:39] [MOTOR 8] inceput JOB-123 [A] | T:25C V:5mm/s100.0
-[08:39] [MOTOR 6] inceput JOB-121 [N] | T:40C V:31mm/s99.7
-[08:39] [MOTOR 3] inceput JOB-118 [A] | T:25C V:5mm/s100.0
-[08:39] [MOTOR 2] terminat JOB-101 [N] | T:25C V:5mm/s
-[08:39] [MOTOR 16] terminat JOB-115 [A] | T:43C V:27mm/s
-[08:39] [MOTOR 2] inceput JOB-117 [N] | T:25C V:5mm/s100.0
-[08:39] [MOTOR 16] inceput JOB-131 [A] | T:43C V:27mm/s99.7
-[08:39] [MOTOR 14] terminat JOB-113 [N] | T:25C V:5mm/s
-[08:39] [MOTOR 7] terminat JOB-106 [N] | T:25C V:5mm/s
-[08:39] [MOTOR 14] inceput JOB-129 [N] | T:25C V:5mm/s100.0
-[08:39] [MOTOR 7] inceput JOB-122 [N] | T:25C V:5mm/s100.0
-[08:39] [MOTOR 13] terminat JOB-112 [A] | T:45C V:32mm/s
-[08:39] [MOTOR 13] inceput JOB-128 [A] | T:45C V:32mm/s99.5
-[08:39] [MOTOR 9] terminat JOB-108 [A] | T:46C V:29mm/s
-[08:39] [MOTOR 9] inceput JOB-124 [N] | T:46C V:29mm/s99.6
-[08:39] [MOTOR 6] terminat JOB-121 [N] | T:37C V:5mm/s
-[08:39] [MOTOR 4] terminat JOB-119 [N] | T:37C V:5mm/s
-[08:39] [MOTOR 6] inceput JOB-137 [N] | T:37C V:5mm/s99.7
-[08:39] [MOTOR 4] inceput JOB-135 [A] | T:37C V:5mm/s99.7
-[08:39] [MOTOR 1] terminat JOB-116 [N] | T:25C V:5mm/s
-[08:39] [MOTOR 5] terminat JOB-120 [N] | T:35C V:5mm/s
-[08:39] [MOTOR 8] terminat JOB-123 [A] | T:36C V:33mm/s
-[08:39] [MOTOR 1] inceput JOB-132 [A] | T:25C V:5mm/s100.0
-[08:39] [MOTOR 5] inceput JOB-136 [N] | T:35C V:5mm/s99.7
-[08:39] [MOTOR 8] inceput JOB-139 [A] | T:36C V:33mm/s99.7
-[08:39] [MOTOR 12] terminat JOB-127 [A] | T:40C V:30mm/s
-[08:39] [MOTOR 10] terminat JOB-125 [A] | T:38C V:29mm/s
-[08:39] [MOTOR 12] inceput JOB-143 [N] | T:40C V:30mm/s99.7
-[08:39] [MOTOR 10] inceput JOB-141 [A] | T:38C V:29mm/s99.7
-[08:39] [MOTOR 16] terminat JOB-131 [A] | T:54C V:31mm/s
-[08:39] [MOTOR 11] terminat JOB-126 [N] | T:33C V:5mm/s
-[08:39] [MOTOR 16] inceput JOB-147 [A] | T:54C V:31mm/s99.4
-[08:39] [MOTOR 11] inceput JOB-142 [A] | T:33C V:5mm/s99.7
-[08:39] [MOTOR 15] terminat JOB-130 [N] | T:25C V:5mm/s
-[08:39] [MOTOR 2] terminat JOB-117 [N] | T:25C V:5mm/s
-[08:39] [MOTOR 15] inceput JOB-146 [A] | T:25C V:5mm/s100.0
-[08:39] [MOTOR 2] inceput JOB-133 [A] | T:25C V:5mm/s100.0
-[08:39] [MOTOR 14] terminat JOB-129 [N] | T:25C V:5mm/s
-[08:39] [MOTOR 14] inceput JOB-145 [N] | T:25C V:5mm/s100.0
-[08:39] [MOTOR 3] terminat JOB-118 [A] | T:43C V:31mm/s
-[08:39] [MOTOR 3] inceput JOB-134 [N] | T:43C V:31mm/s99.6
-[08:39] [MOTOR 13] terminat JOB-128 [A] | T:62C V:31mm/s
-[08:39] [MOTOR 13] inceput JOB-144 [N] | T:62C V:31mm/s99.1
-[08:39] [MOTOR 8] terminat JOB-139 [A] | T:47C V:28mm/s
-[08:39] [MOTOR 8] inceput JOB-155 [A] | T:47C V:28mm/s99.5
-[08:39] [MOTOR 7] terminat JOB-122 [N] | T:25C V:5mm/s
-[08:39] [MOTOR 7] inceput JOB-138 [A] | T:25C V:5mm/s100.0
-[08:39] [MOTOR 9] terminat JOB-124 [N] | T:41C V:5mm/s
-[08:39] [MOTOR 4] terminat JOB-135 [A] | T:50C V:30mm/s
-[08:39] [MOTOR 9] inceput JOB-140 [A] | T:41C V:5mm/s99.6
-[08:39] [MOTOR 4] inceput JOB-151 [A] | T:50C V:30mm/s99.4
-[08:39] [MOTOR 11] terminat JOB-142 [A] | T:45C V:32mm/s
-[08:39] [MOTOR 12] terminat JOB-143 [N] | T:36C V:5mm/s
-[08:39] [MOTOR 10] terminat JOB-141 [A] | T:51C V:30mm/s
-[08:39] [MOTOR 11] inceput JOB-158 [A] | T:45C V:32mm/s99.4
-[08:39] [MOTOR 12] inceput JOB-159 [N] | T:36C V:5mm/s99.7
-[08:39] [MOTOR 10] inceput JOB-157 [N] | T:51C V:30mm/s99.5
-[08:39] [MOTOR 6] terminat JOB-137 [N] | T:33C V:5mm/s
-[08:39] [MOTOR 6] inceput JOB-153 [A] | T:33C V:5mm/s99.7
-[08:39] [MOTOR 1] terminat JOB-132 [A] | T:41C V:30mm/s
-[08:39] [MOTOR 1] inceput JOB-148 [A] | T:41C V:30mm/s99.7
-[08:39] [MOTOR 14] terminat JOB-145 [N] | T:25C V:5mm/s
-[08:39] [MOTOR 14] inceput JOB-161 [N] | T:25C V:5mm/s100.0
-[08:39] [MOTOR 5] terminat JOB-136 [N] | T:30C V:5mm/s
-[08:39] [MOTOR 5] inceput JOB-152 [N] | T:30C V:5mm/s99.7
-[08:39] [MOTOR 3] terminat JOB-134 [N] | T:39C V:5mm/s
-[08:39] [MOTOR 3] inceput JOB-150 [N] | T:39C V:5mm/s99.6
-[08:39] [MOTOR 8] terminat JOB-155 [A] | T:58C V:32mm/s
-[08:39] [MOTOR 8] inceput JOB-171 [N] | T:58C V:32mm/s99.2
-[08:39] [MOTOR 16] terminat JOB-147 [A] | T:74C V:28mm/s
-[08:39] [MOTOR 16] inceput JOB-163 [A] | T:74C V:28mm/s99.0
-[08:39] [MOTOR 15] terminat JOB-146 [A] | T:44C V:32mm/s
-[08:39] [MOTOR 15] inceput JOB-162 [A] | T:44C V:32mm/s99.6
-[08:39] [MOTOR 9] terminat JOB-140 [A] | T:53C V:32mm/s
-[08:39] [MOTOR 9] inceput JOB-156 [A] | T:53C V:32mm/s99.3
-[08:39] [MOTOR 11] terminat JOB-158 [A] | T:56C V:27mm/s
-[08:39] [MOTOR 2] terminat JOB-133 [A] | T:45C V:32mm/s | HP: 99.5% (-0.51%)
-[08:39] [MOTOR 12] terminat JOB-159 [N] | T:33C V:5mm/s
-[08:39] [MOTOR 11] inceput JOB-174 [A] | T:56C V:27mm/s99.2
-[08:39] [MOTOR 2] inceput JOB-149 [A] | T:45C V:32mm/s99.5
-[08:39] [MOTOR 12] inceput JOB-175 [A] | T:33C V:5mm/s99.7
-[08:39] [SISTEM] >>> Asteptare finalizare sarcini... <<<
-[08:39] [MOTOR 13] terminat JOB-144 [N] | T:57C V:5mm/s
-[08:39] [MOTOR 6] terminat JOB-153 [A] | T:46C V:30mm/s
-[08:39] [MOTOR 13] inceput JOB-160 [N] | T:57C V:5mm/s99.1
-[08:39] [MOTOR 6] inceput JOB-169 [A] | T:46C V:30mm/s99.4
-[08:39] [MOTOR 1] terminat JOB-148 [A] | T:54C V:32mm/s
-[08:39] [MOTOR 1] inceput JOB-164 [A] | T:54C V:32mm/s99.3
-[08:39] [MOTOR 10] terminat JOB-157 [N] | T:46C V:5mm/s
-[08:39] [MOTOR 7] terminat JOB-138 [A] | T:43C V:28mm/s
-[08:39] [MOTOR 10] inceput JOB-173 [N] | T:46C V:5mm/s99.5
-[08:39] [MOTOR 7] inceput JOB-154 [A] | T:43C V:28mm/s99.7
-[08:39] [MOTOR 4] terminat JOB-151 [A] | T:69C V:28mm/s
-[08:39] [MOTOR 4] inceput JOB-167 [A] | T:69C V:28mm/s99.0
-[08:39] [MOTOR 5] terminat JOB-152 [N] | T:25C V:5mm/s
-[08:39] [MOTOR 11] terminat JOB-174 [A] | T:67C V:31mm/s
-[08:39] [MOTOR 5] inceput JOB-168 [N] | T:25C V:5mm/s99.7
-[08:39] [MOTOR 11] inceput JOB-190 [A] | T:67C V:31mm/s98.9
-[08:39] [MOTOR 16] terminat JOB-163 [A] | T:89C V:27mm/s
-[08:39] [MOTOR 14] terminat JOB-161 [N] | T:25C V:5mm/s
-[08:39] [MOTOR 16] inceput JOB-179 [A] | T:89C V:27mm/s98.6
-[08:39] [MOTOR 14] inceput JOB-177 [A] | T:25C V:5mm/s100.0
-[08:39] [MOTOR 12] terminat JOB-175 [A] | T:47C V:31mm/s
-[08:39] [MOTOR 15] terminat JOB-162 [A] | T:60C V:28mm/s
-[08:39] [MOTOR 9] terminat JOB-156 [A] | T:68C V:28mm/s
-[08:39] [MOTOR 12] inceput JOB-191 [A] | T:47C V:31mm/s99.3
-[08:39] [MOTOR 15] inceput JOB-178 [N] | T:60C V:28mm/s99.2
-[08:39] [MOTOR 9] inceput JOB-172 [N] | T:68C V:28mm/s99.0
-[08:39] [MOTOR 3] terminat JOB-150 [N] | T:33C V:5mm/s
-[08:39] [MOTOR 8] terminat JOB-171 [N] | T:53C V:5mm/s
-[08:39] [MOTOR 3] inceput JOB-166 [A] | T:33C V:5mm/s99.6
-[08:39] [MOTOR 8] inceput JOB-187 [N] | T:53C V:5mm/s99.2
-[08:39] [MOTOR 10] terminat JOB-173 [N] | T:43C V:5mm/s
-[08:39] [MOTOR 10] inceput JOB-189 [N] | T:43C V:5mm/s99.5
-[08:39] [MOTOR 2] terminat JOB-149 [A] | T:62C V:31mm/s
-[08:39] [MOTOR 6] terminat JOB-169 [A] | T:61C V:28mm/s
-[08:39] [MOTOR 1] terminat JOB-164 [A] | T:68C V:29mm/s
-[08:39] [MOTOR 2] inceput JOB-165 [A] | T:62C V:31mm/s99.1
-[08:39] [MOTOR 6] inceput JOB-185 [A] | T:61C V:28mm/s99.1
-[08:39] [MOTOR 1] inceput JOB-180 [N] | T:68C V:29mm/s99.0
-[08:40] [MOTOR 13] terminat JOB-160 [N] | T:52C V:5mm/s
-[08:40] [MOTOR 13] inceput JOB-176 [A] | T:52C V:5mm/s99.1
-[08:40] [MOTOR 5] terminat JOB-168 [N] | T:25C V:5mm/s
-[08:40] [MOTOR 4] terminat JOB-167 [A] | T:86C V:30mm/s
-[08:40] [MOTOR 5] inceput JOB-184 [A] | T:25C V:5mm/s99.7
-[08:40] [MOTOR 4] inceput JOB-183 [N] | T:86C V:30mm/s98.5
-[08:40] [MOTOR 7] terminat JOB-154 [A] | T:63C V:29mm/s
-[08:40] [MOTOR 7] inceput JOB-170 [A] | T:63C V:29mm/s99.2
-[08:40] [MOTOR 11] terminat JOB-190 [A] | T:83C V:31mm/s
-[08:40] [MOTOR 11] inceput JOB-206 [N] | T:83C V:31mm/s98.5
-[08:40] [MOTOR 16] terminat JOB-179 [A] | T:104C V:31mm/s | HP: 97.9% (-0.72%)
-[08:40] [MOTOR 16] inceput JOB-195 [N] | T:104C V:31mm/s97.9
-[08:40] [MOTOR 8] terminat JOB-187 [N] | T:49C V:5mm/s
-[08:40] [MOTOR 10] terminat JOB-189 [N] | T:39C V:5mm/s
-[08:40] [MOTOR 8] inceput JOB-203 [N] | T:49C V:5mm/s99.2
-[08:40] [MOTOR 10] inceput JOB-205 [A] | T:39C V:5mm/s99.5
-[08:40] [MOTOR 9] terminat JOB-172 [N] | T:64C V:5mm/s
-[08:40] [MOTOR 2] terminat JOB-165 [A] | T:75C V:28mm/s
-[08:40] [MOTOR 9] inceput JOB-188 [A] | T:64C V:5mm/s98.9
-[08:40] [MOTOR 2] inceput JOB-181 [N] | T:75C V:28mm/s98.8
-[08:40] [MOTOR 15] terminat JOB-178 [N] | T:55C V:5mm/s
-[08:40] [MOTOR 13] terminat JOB-176 [A] | T:63C V:33mm/s
-[08:40] [MOTOR 15] inceput JOB-194 [N] | T:55C V:5mm/s99.2
-[08:40] [MOTOR 13] inceput JOB-192 [N] | T:63C V:33mm/s98.8
-[08:40] [MOTOR 12] terminat JOB-191 [A] | T:65C V:31mm/s
-[08:40] [MOTOR 12] inceput JOB-207 [A] | T:65C V:31mm/s98.9
-[08:40] [MOTOR 6] terminat JOB-185 [A] | T:77C V:31mm/s
-[08:40] [MOTOR 3] terminat JOB-166 [A] | T:51C V:32mm/s
-[08:40] [MOTOR 14] terminat JOB-177 [A] | T:46C V:27mm/s
-[08:40] [MOTOR 6] inceput JOB-201 [N] | T:77C V:31mm/s98.7
-[08:40] [MOTOR 3] inceput JOB-182 [A] | T:51C V:32mm/s99.1
-[08:40] [MOTOR 14] inceput JOB-193 [A] | T:46C V:27mm/s99.6
-[08:40] [MOTOR 1] terminat JOB-180 [N] | T:63C V:5mm/s
-[08:40] [MOTOR 1] inceput JOB-196 [N] | T:63C V:5mm/s99.0
-[08:40] [MOTOR 4] terminat JOB-183 [N] | T:82C V:5mm/s
-[08:40] [MOTOR 4] inceput JOB-199 [A] | T:82C V:5mm/s98.4
-[08:40] [MOTOR 11] terminat JOB-206 [N] | T:79C V:5mm/s
-[08:40] [MOTOR 11] inceput JOB-222 [N] | T:79C V:5mm/s98.5
-[08:40] [MOTOR 5] terminat JOB-184 [A] | T:42C V:29mm/s
-[08:40] [MOTOR 5] inceput JOB-200 [N] | T:42C V:29mm/s99.4
-[08:40] [MOTOR 7] terminat JOB-170 [A] | T:81C V:32mm/s | HP: 98.7% (-0.53%)
-[08:40] [MOTOR 7] inceput JOB-186 [A] | T:81C V:32mm/s98.7
-[08:40] [MOTOR 6] terminat JOB-201 [N] | T:73C V:5mm/s
-[08:40] [MOTOR 14] terminat JOB-193 [A] | T:58C V:33mm/s
-[08:40] [MOTOR 10] terminat JOB-205 [A] | T:56C V:27mm/s
-[08:40] [MOTOR 6] inceput JOB-217 [A] | T:73C V:5mm/s98.6
-[08:40] [MOTOR 14] inceput JOB-209 [N] | T:58C V:33mm/s99.3
-[08:40] [MOTOR 10] inceput JOB-221 [N] | T:56C V:27mm/s99.2
-[08:40] [MOTOR 16] terminat JOB-195 [N] | T:99C V:5mm/s
-[08:40] [MOTOR 12] terminat JOB-207 [A] | T:79C V:30mm/s
-[08:40] [MOTOR 16] inceput JOB-211 [A] | T:99C V:5mm/s97.6
-[08:40] [MOTOR 12] inceput JOB-223 [N] | T:79C V:30mm/s98.6
-[08:40] [MOTOR 8] terminat JOB-203 [N] | T:44C V:5mm/s
-[08:40] [MOTOR 3] terminat JOB-182 [A] | T:66C V:27mm/s
-[08:40] [MOTOR 8] inceput JOB-219 [N] | T:44C V:5mm/s99.2
-[08:40] [MOTOR 3] inceput JOB-198 [N] | T:66C V:27mm/s98.8
-[08:40] [MOTOR 2] terminat JOB-181 [N] | T:70C V:5mm/s
-[08:40] [MOTOR 2] inceput JOB-197 [N] | T:70C V:5mm/s98.7
-[08:40] [MOTOR 9] terminat JOB-188 [A] | T:84C V:31mm/s | HP: 98.4% (-0.57%)
-[08:40] [MOTOR 15] terminat JOB-194 [N] | T:49C V:5mm/s
-[08:40] [MOTOR 9] inceput JOB-204 [A] | T:84C V:31mm/s98.4
-[08:40] [MOTOR 15] inceput JOB-210 [A] | T:49C V:5mm/s99.2
-[08:40] [MOTOR 13] terminat JOB-192 [N] | T:58C V:5mm/s
-[08:40] [MOTOR 13] inceput JOB-208 [A] | T:58C V:5mm/s98.7
-[08:40] [MOTOR 1] terminat JOB-196 [N] | T:58C V:5mm/s
-[08:40] [MOTOR 1] inceput JOB-212 [A] | T:58C V:5mm/s99.0
-[08:40] [MOTOR 11] terminat JOB-222 [N] | T:75C V:5mm/s
-[08:40] [MOTOR 4] terminat JOB-199 [A] | T:102C V:27mm/s | HP: 97.7% (-0.74%)
-[08:40] [MOTOR 11] inceput JOB-238 [N] | T:75C V:5mm/s98.4
-[08:40] [MOTOR 4] inceput JOB-215 [N] | T:102C V:27mm/s97.7
-[08:40] [MOTOR 5] terminat JOB-200 [N] | T:37C V:5mm/s
-[08:40] [MOTOR 5] inceput JOB-216 [A] | T:37C V:5mm/s99.4
-[08:40] [MOTOR 6] terminat JOB-217 [A] | T:86C V:28mm/s
-[08:40] [MOTOR 14] terminat JOB-209 [N] | T:54C V:5mm/s
-[08:40] [MOTOR 10] terminat JOB-221 [N] | T:52C V:5mm/s
-[08:40] [MOTOR 8] terminat JOB-219 [N] | T:41C V:5mm/s
-[08:40] [MOTOR 6] inceput JOB-233 [A] | T:86C V:28mm/s98.3
-[08:40] [MOTOR 14] inceput JOB-225 [N] | T:54C V:5mm/s99.3
-[08:40] [MOTOR 10] inceput JOB-237 [A] | T:52C V:5mm/s99.2
-[08:40] [MOTOR 8] inceput JOB-235 [A] | T:41C V:5mm/s99.2
-[08:40] [MOTOR 2] terminat JOB-197 [N] | T:67C V:5mm/s
-[08:40] [MOTOR 12] terminat JOB-223 [N] | T:74C V:5mm/s
-[08:40] [MOTOR 2] inceput JOB-213 [N] | T:67C V:5mm/s98.7
-[08:40] [MOTOR 12] inceput JOB-239 [N] | T:74C V:5mm/s98.5
-[08:40] [MOTOR 16] terminat JOB-211 [A] | T:116C V:32mm/s | HP: 96.3% (-1.26%)
-[08:40] [MOTOR 7] terminat JOB-186 [A] | T:100C V:28mm/s | HP: 98.0% (-0.70%)
-[08:40] [MOTOR 3] terminat JOB-198 [N] | T:62C V:5mm/s
-[08:40] [MOTOR 15] terminat JOB-210 [A] | T:62C V:30mm/s
-[08:40] [MOTOR 16] inceput JOB-227 [N] | T:116C V:32mm/s96.3
-[08:40] [MOTOR 7] inceput JOB-202 [N] | T:100C V:28mm/s98.0
-[08:40] [MOTOR 3] inceput JOB-214 [A] | T:62C V:5mm/s98.8
-[08:40] [MOTOR 15] inceput JOB-226 [N] | T:62C V:30mm/s99.0
-[08:40] [MOTOR 9] terminat JOB-204 [A] | T:97C V:29mm/s
-[08:40] [MOTOR 9] inceput JOB-220 [N] | T:97C V:29mm/s97.9
-[08:40] [MOTOR 13] terminat JOB-208 [A] | T:73C V:30mm/s
-[08:40] [MOTOR 13] inceput JOB-224 [N] | T:73C V:30mm/s98.4
-[08:40] [MOTOR 8] terminat JOB-235 [A] | T:53C V:32mm/s
-[08:40] [MOTOR 14] terminat JOB-225 [N] | T:51C V:5mm/s
-[08:40] [MOTOR 11] terminat JOB-238 [N] | T:70C V:5mm/s
-[08:40] [MOTOR 1] terminat JOB-212 [A] | T:75C V:32mm/s
-[08:40] [MOTOR 8] inceput JOB-251 [N] | T:53C V:32mm/s98.9
-[08:40] [MOTOR 14] inceput JOB-241 [A] | T:51C V:5mm/s99.3
-[08:40] [MOTOR 11] inceput JOB-254 [A] | T:70C V:5mm/s98.4
-[08:40] [MOTOR 1] inceput JOB-228 [A] | T:75C V:32mm/s98.5
-[08:40] [MOTOR 6] terminat JOB-233 [A] | T:99C V:29mm/s
-[08:40] [MOTOR 6] inceput JOB-249 [A] | T:99C V:29mm/s97.8
-[08:40] [MOTOR 4] terminat JOB-215 [N] | T:97C V:5mm/s
-[08:40] [MOTOR 10] terminat JOB-237 [A] | T:66C V:28mm/s
-[08:40] [MOTOR 4] inceput JOB-231 [A] | T:97C V:5mm/s97.4
-[08:40] [MOTOR 10] inceput JOB-253 [N] | T:66C V:28mm/s98.9
-[08:40] [MOTOR 5] terminat JOB-216 [A] | T:55C V:29mm/s
-[08:40] [MOTOR 5] inceput JOB-232 [A] | T:55C V:29mm/s99.0
-[08:40] [MOTOR 16] terminat JOB-227 [N] | T:112C V:5mm/s | HP: 95.8% (-0.54%)
-[08:40] [MOTOR 9] terminat JOB-220 [N] | T:93C V:5mm/s
-[08:40] [MOTOR 16] inceput JOB-243 [N] | T:112C V:5mm/s95.8
-[08:40] [MOTOR 9] inceput JOB-236 [A] | T:93C V:5mm/s97.8
-[08:40] [MOTOR 2] terminat JOB-213 [N] | T:62C V:5mm/s
-[08:40] [MOTOR 15] terminat JOB-226 [N] | T:58C V:5mm/s
-[08:40] [MOTOR 2] inceput JOB-229 [N] | T:62C V:5mm/s98.7
-[08:40] [MOTOR 15] inceput JOB-242 [A] | T:58C V:5mm/s98.9
-[08:40] [MOTOR 7] terminat JOB-202 [N] | T:96C V:5mm/s
-[08:40] [MOTOR 3] terminat JOB-214 [A] | T:77C V:28mm/s
-[08:40] [MOTOR 7] inceput JOB-218 [N] | T:96C V:5mm/s97.8
-[08:40] [MOTOR 3] inceput JOB-230 [N] | T:77C V:28mm/s98.5
-[08:40] [MOTOR 14] terminat JOB-241 [A] | T:61C V:29mm/s
-[08:40] [MOTOR 12] terminat JOB-239 [N] | T:69C V:5mm/s
-[08:40] [MOTOR 14] inceput JOB-257 [A] | T:61C V:29mm/s99.1
-[08:40] [MOTOR 12] inceput JOB-255 [N] | T:69C V:5mm/s98.5
-[08:40] [MOTOR 8] terminat JOB-251 [N] | T:49C V:5mm/s
-[08:40] [MOTOR 1] terminat JOB-228 [A] | T:90C V:31mm/s
-[08:40] [MOTOR 6] terminat JOB-249 [A] | T:113C V:27mm/s | HP: 97.0% (-0.83%)
-[08:40] [MOTOR 13] terminat JOB-224 [N] | T:68C V:5mm/s
-[08:40] [MOTOR 8] inceput JOB-267 [A] | T:49C V:5mm/s98.9
-[08:40] [MOTOR 1] inceput JOB-244 [A] | T:90C V:31mm/s98.1
-[08:40] [MOTOR 6] inceput JOB-265 [A] | T:113C V:27mm/s97.0
-[08:40] [MOTOR 13] inceput JOB-240 [A] | T:68C V:5mm/s98.4
-[08:40] [MOTOR 16] terminat JOB-243 [N] | T:108C V:5mm/s
-[08:40] [MOTOR 3] terminat JOB-230 [N] | T:74C V:5mm/s
-[08:40] [MOTOR 16] inceput JOB-259 [A] | T:108C V:5mm/s95.3
-[08:40] [MOTOR 3] inceput JOB-246 [A] | T:74C V:5mm/s98.4
-[08:40] [MOTOR 9] terminat JOB-236 [A] | T:109C V:28mm/s | HP: 96.9% (-0.82%)
-[08:40] [MOTOR 11] terminat JOB-254 [A] | T:91C V:31mm/s | HP: 97.7% (-0.68%)
-[08:40] [MOTOR 15] terminat JOB-242 [A] | T:73C V:33mm/s
-[08:40] [MOTOR 9] inceput JOB-252 [A] | T:109C V:28mm/s96.9
-[08:40] [MOTOR 11] inceput JOB-270 [N] | T:91C V:31mm/s97.7
-[08:40] [MOTOR 15] inceput JOB-258 [N] | T:73C V:33mm/s98.5
-[08:40] [MOTOR 5] terminat JOB-232 [A] | T:73C V:31mm/s
-[08:40] [MOTOR 4] terminat JOB-231 [A] | T:117C V:29mm/s | HP: 95.9% (-1.57%)
-[08:40] [MOTOR 10] terminat JOB-253 [N] | T:60C V:5mm/s
-[08:40] [MOTOR 5] inceput JOB-248 [A] | T:73C V:31mm/s98.5
-[08:40] [MOTOR 4] inceput JOB-247 [N] | T:117C V:29mm/s95.9
-[08:40] [MOTOR 10] inceput JOB-269 [A] | T:60C V:5mm/s98.9
-[08:40] [MOTOR 7] terminat JOB-218 [N] | T:92C V:5mm/s
-[08:40] [MOTOR 7] inceput JOB-234 [A] | T:92C V:5mm/s97.6
-[08:40] [MOTOR 12] terminat JOB-255 [N] | T:65C V:5mm/s
-[08:40] [MOTOR 12] inceput JOB-271 [N] | T:65C V:5mm/s98.5
-[08:40] [MOTOR 2] terminat JOB-229 [N] | T:57C V:5mm/s
-[08:40] [MOTOR 2] inceput JOB-245 [A] | T:57C V:5mm/s98.7
-[08:40] [MOTOR 6] terminat JOB-265 [A] | T:126C V:28mm/s | HP: 95.3% (-1.70%)
-[08:40] [MOTOR 6] inceput JOB-281 [A] | T:126C V:28mm/s95.3
-[08:40] [MOTOR 1] terminat JOB-244 [A] | T:105C V:27mm/s | HP: 97.4% (-0.65%)
-[08:40] [MOTOR 14] terminat JOB-257 [A] | T:80C V:30mm/s
-[08:40] [MOTOR 8] terminat JOB-267 [A] | T:64C V:32mm/s
-[08:40] [MOTOR 1] inceput JOB-260 [A] | T:105C V:27mm/s97.4
-[08:40] [MOTOR 14] inceput JOB-273 [A] | T:80C V:30mm/s98.6
-[08:40] [MOTOR 8] inceput JOB-283 [A] | T:64C V:32mm/s98.5
-[08:40] [MOTOR 13] terminat JOB-240 [A] | T:84C V:32mm/s
-[08:40] [MOTOR 13] inceput JOB-256 [A] | T:84C V:32mm/s97.9
-[08:40] [MOTOR 16] terminat JOB-259 [A] | T:119C V:30mm/s | HP: 94.3% (-0.99%)
-[08:40] [MOTOR 16] inceput JOB-275 [N] | T:119C V:30mm/s94.3
-[08:40] [MOTOR 15] terminat JOB-258 [N] | T:70C V:5mm/s
-[08:40] [MOTOR 3] terminat JOB-246 [A] | T:87C V:29mm/s
-[08:40] [MOTOR 15] inceput JOB-274 [N] | T:70C V:5mm/s98.5
-[08:40] [MOTOR 3] inceput JOB-262 [N] | T:87C V:29mm/s98.1
-[08:40] [MOTOR 2] terminat JOB-245 [A] | T:68C V:29mm/s
-[08:40] [MOTOR 2] inceput JOB-261 [N] | T:68C V:29mm/s98.4
-[08:40] [MOTOR 10] terminat JOB-269 [A] | T:75C V:31mm/s
-[08:40] [MOTOR 10] inceput JOB-285 [A] | T:75C V:31mm/s98.5
-[08:40] [MOTOR 9] terminat JOB-252 [A] | T:127C V:32mm/s | HP: 94.2% (-2.72%)
-[08:40] [MOTOR 5] terminat JOB-248 [A] | T:91C V:30mm/s | HP: 98.0% (-0.55%)
-[08:40] [MOTOR 6] terminat JOB-281 [A] | T:138C V:28mm/s | HP: 91.8% (-3.52%)
-[08:40] [MOTOR 9] inceput JOB-268 [A] | T:127C V:32mm/s94.2
-[08:40] [MOTOR 5] inceput JOB-264 [N] | T:91C V:30mm/s98.0
-[08:40] [MOTOR 6] inceput JOB-297 [N] | T:138C V:28mm/s91.8
-[08:40] [MOTOR 13] terminat JOB-256 [A] | T:95C V:33mm/s
-[08:40] [MOTOR 7] terminat JOB-234 [A] | T:110C V:27mm/s | HP: 96.7% (-0.95%)
-[08:40] [MOTOR 1] terminat JOB-260 [A] | T:117C V:29mm/s | HP: 96.5% (-0.94%)
-[08:40] [MOTOR 11] terminat JOB-270 [N] | T:85C V:5mm/s
-[08:40] [MOTOR 13] inceput JOB-272 [A] | T:95C V:33mm/s97.5
-[08:40] [MOTOR 7] inceput JOB-250 [A] | T:110C V:27mm/s96.7
-[08:40] [MOTOR 1] inceput JOB-276 [A] | T:117C V:29mm/s96.5
-[08:40] [MOTOR 11] inceput JOB-286 [N] | T:85C V:5mm/s97.5
-[08:40] [MOTOR 8] terminat JOB-283 [A] | T:77C V:28mm/s
-[08:40] [MOTOR 4] terminat JOB-247 [N] | T:111C V:5mm/s | HP: 95.1% (-0.79%)
-[08:40] [MOTOR 12] terminat JOB-271 [N] | T:60C V:5mm/s
-[08:40] [MOTOR 8] inceput JOB-299 [N] | T:77C V:28mm/s98.2
-[08:40] [MOTOR 4] inceput JOB-263 [N] | T:111C V:5mm/s95.1
-[08:40] [MOTOR 12] inceput JOB-287 [N] | T:60C V:5mm/s98.4
-[08:40] [MOTOR 14] terminat JOB-273 [A] | T:98C V:30mm/s | HP: 97.9% (-0.69%)
-[08:40] [MOTOR 14] inceput JOB-289 [N] | T:98C V:30mm/s97.9
-[08:40] [MOTOR 3] terminat JOB-262 [N] | T:82C V:5mm/s
-[08:40] [MOTOR 3] inceput JOB-278 [N] | T:82C V:5mm/s98.0
-[08:40] [MOTOR 16] terminat JOB-275 [N] | T:113C V:5mm/s | HP: 93.5% (-0.87%)
-[08:40] [MOTOR 15] terminat JOB-274 [N] | T:64C V:5mm/s
-[08:40] [MOTOR 16] inceput JOB-291 [N] | T:113C V:5mm/s93.5
-[08:40] [MOTOR 15] inceput JOB-290 [A] | T:64C V:5mm/s98.5
-[08:40] [MOTOR 11] terminat JOB-286 [N] | T:82C V:5mm/s
-[08:40] [MOTOR 11] inceput JOB-302 [N] | T:82C V:5mm/s97.5
-[08:40] [MOTOR 6] terminat JOB-297 [N] | T:134C V:5mm/s | HP: 89.0% (-2.77%)
-[08:40] [MOTOR 10] terminat JOB-285 [A] | T:91C V:30mm/s
-[08:40] [MOTOR 2] terminat JOB-261 [N] | T:64C V:5mm/s
-[08:40] [MOTOR 7] terminat JOB-250 [A] | T:122C V:30mm/s | HP: 95.4% (-1.32%)
-[08:40] [MOTOR 9] terminat JOB-268 [A] | T:141C V:33mm/s | HP: 89.3% (-4.92%)
-[08:40] [MOTOR 6] inceput JOB-313 [N] | T:134C V:5mm/s89.0
-[08:40] [MOTOR 10] inceput JOB-301 [N] | T:91C V:30mm/s98.0
-[08:40] [MOTOR 2] inceput JOB-277 [A] | T:64C V:5mm/s98.4
-[08:40] [MOTOR 7] inceput JOB-266 [A] | T:122C V:30mm/s95.4
-[08:40] [MOTOR 9] inceput JOB-284 [N] | T:141C V:33mm/s89.3
-[08:40] [MOTOR 1] terminat JOB-276 [A] | T:130C V:29mm/s | HP: 94.1% (-2.34%)
-[08:40] [MOTOR 1] inceput JOB-292 [N] | T:130C V:29mm/s94.1
-[08:40] [MOTOR 13] terminat JOB-272 [A] | T:109C V:29mm/s | HP: 96.7% (-0.78%)
-[08:40] [MOTOR 8] terminat JOB-299 [N] | T:73C V:5mm/s
-[08:40] [MOTOR 13] inceput JOB-288 [A] | T:109C V:29mm/s96.7
-[08:40] [MOTOR 8] inceput JOB-315 [N] | T:73C V:5mm/s98.2
-[08:40] [MOTOR 14] terminat JOB-289 [N] | T:95C V:5mm/s
-[08:40] [MOTOR 12] terminat JOB-287 [N] | T:55C V:5mm/s
-[08:40] [MOTOR 5] terminat JOB-264 [N] | T:85C V:5mm/s
-[08:40] [MOTOR 14] inceput JOB-305 [N] | T:95C V:5mm/s97.8
-[08:40] [MOTOR 12] inceput JOB-303 [N] | T:55C V:5mm/s98.4
-[08:40] [MOTOR 5] inceput JOB-280 [A] | T:85C V:5mm/s97.9
-[08:40] [MOTOR 4] terminat JOB-263 [N] | T:105C V:5mm/s | HP: 94.5% (-0.55%)
-[08:40] [MOTOR 4] inceput JOB-279 [N] | T:105C V:5mm/s94.5
-[08:40] [MOTOR 16] terminat JOB-291 [N] | T:109C V:5mm/s | HP: 92.9% (-0.53%)
-[08:40] [MOTOR 2] terminat JOB-277 [A] | T:77C V:28mm/s
-[08:40] [MOTOR 10] terminat JOB-301 [N] | T:87C V:5mm/s
-[08:40] [MOTOR 1] terminat JOB-292 [N] | T:127C V:5mm/s | HP: 92.7% (-1.40%)
-[08:40] [MOTOR 15] terminat JOB-290 [A] | T:80C V:30mm/s
-[08:40] [MOTOR 3] terminat JOB-278 [N] | T:77C V:5mm/s
-[08:40] [MOTOR 7] terminat JOB-266 [A] | T:136C V:27mm/s | HP: 91.9% (-3.42%)
-[08:40] [MOTOR 16] inceput JOB-307 [N] | T:109C V:5mm/s92.9
-[08:40] [MOTOR 2] inceput JOB-293 [A] | T:77C V:28mm/s98.1
-[08:40] [MOTOR 10] inceput JOB-317 [N] | T:87C V:5mm/s97.9
-[08:40] [MOTOR 1] inceput JOB-308 [N] | T:127C V:5mm/s92.7
-[08:40] [MOTOR 15] inceput JOB-306 [N] | T:80C V:30mm/s98.0
-[08:40] [MOTOR 3] inceput JOB-294 [A] | T:77C V:5mm/s97.9
-[08:40] [MOTOR 7] inceput JOB-282 [A] | T:136C V:27mm/s91.9
-[08:40] [MOTOR 11] terminat JOB-302 [N] | T:77C V:5mm/s
-[08:40] [MOTOR 13] terminat JOB-288 [A] | T:122C V:29mm/s | HP: 95.3% (-1.37%)
-[08:40] [MOTOR 11] inceput JOB-318 [N] | T:77C V:5mm/s97.4
-[08:40] [MOTOR 13] inceput JOB-304 [N] | T:122C V:29mm/s95.3
-[08:40] [MOTOR 6] terminat JOB-313 [N] | T:130C V:5mm/s | HP: 86.6% (-2.43%)
-[08:40] [MOTOR 6] inceput JOB-329 [N] | T:130C V:5mm/s86.6
-[08:40] [MOTOR 9] terminat JOB-284 [N] | T:136C V:5mm/s | HP: 85.1% (-4.21%)
-[08:40] [MOTOR 12] terminat JOB-303 [N] | T:51C V:5mm/s
-[08:40] [MOTOR 5] terminat JOB-280 [A] | T:99C V:32mm/s | HP: 97.2% (-0.61%)
-[08:40] [MOTOR 9] inceput JOB-300 [N] | T:136C V:5mm/s85.1
-[08:40] [MOTOR 12] inceput JOB-319 [A] | T:51C V:5mm/s98.4
-[08:40] [MOTOR 5] inceput JOB-296 [A] | T:99C V:32mm/s97.2
-[08:40] [MOTOR 8] terminat JOB-315 [N] | T:68C V:5mm/s
-[08:40] [MOTOR 8] inceput JOB-331 [A] | T:68C V:5mm/s98.1
-[08:40] [MOTOR 14] terminat JOB-305 [N] | T:90C V:5mm/s
-[08:40] [MOTOR 14] inceput JOB-321 [N] | T:90C V:5mm/s97.6
-[08:40] [MOTOR 3] terminat JOB-294 [A] | T:90C V:30mm/s
-[08:40] [MOTOR 3] inceput JOB-310 [N] | T:90C V:30mm/s97.5
-[08:40] [MOTOR 15] terminat JOB-306 [N] | T:76C V:5mm/s
-[08:40] [MOTOR 4] terminat JOB-279 [N] | T:100C V:5mm/s
-[08:40] [MOTOR 15] inceput JOB-322 [N] | T:76C V:5mm/s98.0
-[08:40] [MOTOR 4] inceput JOB-295 [A] | T:100C V:5mm/s94.2
-[08:40] [MOTOR 16] terminat JOB-307 [N] | T:104C V:5mm/s
-[08:40] [MOTOR 5] terminat JOB-296 [A] | T:111C V:32mm/s | HP: 96.5% (-0.76%)
-[08:40] [MOTOR 16] inceput JOB-323 [N] | T:104C V:5mm/s92.5
-[08:40] [MOTOR 5] inceput JOB-312 [A] | T:111C V:32mm/s96.5
-[08:40] [MOTOR 11] terminat JOB-318 [N] | T:72C V:5mm/s
-[08:40] [MOTOR 2] terminat JOB-293 [A] | T:96C V:32mm/s | HP: 97.4% (-0.73%)
-[08:40] [MOTOR 11] inceput JOB-334 [A] | T:72C V:5mm/s97.4
-[08:40] [MOTOR 2] inceput JOB-309 [N] | T:96C V:32mm/s97.4
-[08:40] [MOTOR 8] terminat JOB-331 [A] | T:81C V:27mm/s
-[08:40] [MOTOR 6] terminat JOB-329 [N] | T:125C V:5mm/s | HP: 84.8% (-1.73%)
-[08:40] [MOTOR 12] terminat JOB-319 [A] | T:65C V:32mm/s
-[08:40] [MOTOR 1] terminat JOB-308 [N] | T:121C V:5mm/s | HP: 91.1% (-1.61%)
-[08:40] [MOTOR 10] terminat JOB-317 [N] | T:81C V:5mm/s
-[08:40] [MOTOR 8] inceput JOB-347 [N] | T:81C V:27mm/s97.9
-[08:40] [MOTOR 6] inceput JOB-345 [N] | T:125C V:5mm/s84.8
-[08:40] [MOTOR 12] inceput JOB-335 [N] | T:65C V:32mm/s98.0
-[08:40] [MOTOR 1] inceput JOB-324 [N] | T:121C V:5mm/s91.1
-[08:40] [MOTOR 10] inceput JOB-333 [A] | T:81C V:5mm/s97.8
-[08:40] [MOTOR 13] terminat JOB-304 [N] | T:117C V:5mm/s | HP: 94.2% (-1.12%)
-[08:40] [MOTOR 13] inceput JOB-320 [A] | T:117C V:5mm/s94.2
-[08:40] [MOTOR 7] terminat JOB-282 [A] | T:157C V:32mm/s | HP: 71.6% (-20.38%)
-[08:40] [MOTOR 7] ! PROTECTIE (157C). Racire...
-[08:40] [MOTOR 9] terminat JOB-300 [N] | T:132C V:5mm/s | HP: 82.5% (-2.58%)
-[08:40] [MOTOR 9] inceput JOB-316 [A] | T:132C V:5mm/s82.5
-[08:40] [MOTOR 3] terminat JOB-310 [N] | T:86C V:5mm/s
-[08:40] [MOTOR 3] inceput JOB-326 [A] | T:86C V:5mm/s97.5
-[08:40] [MOTOR 14] terminat JOB-321 [N] | T:85C V:5mm/s
-[08:40] [MOTOR 14] inceput JOB-337 [N] | T:85C V:5mm/s97.5
-[08:40] [MOTOR 4] terminat JOB-295 [A] | T:112C V:28mm/s | HP: 93.4% (-0.73%)
-[08:40] [MOTOR 4] inceput JOB-311 [N] | T:112C V:28mm/s93.4
-[08:40] [MOTOR 10] terminat JOB-333 [A] | T:93C V:31mm/s
-[08:40] [MOTOR 10] inceput JOB-349 [N] | T:93C V:31mm/s97.4
-[08:40] [MOTOR 13] terminat JOB-320 [A] | T:129C V:29mm/s | HP: 92.1% (-2.05%)
-[08:40] [MOTOR 6] terminat JOB-345 [N] | T:121C V:5mm/s | HP: 83.8% (-1.05%)
-[08:40] [MOTOR 16] terminat JOB-323 [N] | T:99C V:5mm/s
-[08:40] [MOTOR 13] inceput JOB-336 [A] | T:129C V:29mm/s92.1
-[08:40] [MOTOR 6] inceput JOB-361 [N] | T:121C V:5mm/s83.8
-[08:40] [MOTOR 16] inceput JOB-339 [A] | T:99C V:5mm/s92.2
-[08:40] [MOTOR 15] terminat JOB-322 [N] | T:71C V:5mm/s
-[08:40] [MOTOR 12] terminat JOB-335 [N] | T:60C V:5mm/s
-[08:40] [MOTOR 15] inceput JOB-338 [N] | T:71C V:5mm/s98.0
-[08:40] [MOTOR 12] inceput JOB-351 [N] | T:60C V:5mm/s98.0
-[08:40] [MOTOR 5] terminat JOB-312 [A] | T:130C V:29mm/s | HP: 93.5% (-2.98%)
-[08:40] [MOTOR 5] inceput JOB-328 [N] | T:130C V:29mm/s93.5
-[08:40] [MOTOR 1] terminat JOB-324 [N] | T:116C V:5mm/s | HP: 90.1% (-0.98%)
-[08:40] [MOTOR 9] terminat JOB-316 [A] | T:146C V:31mm/s | HP: 75.6% (-6.91%)
-[08:40] [MOTOR 1] inceput JOB-340 [A] | T:116C V:5mm/s90.1
-[08:40] [MOTOR 9] inceput JOB-332 [A] | T:146C V:31mm/s75.6
-[08:40] [MOTOR 8] terminat JOB-347 [N] | T:75C V:5mm/s
-[08:40] [MOTOR 11] terminat JOB-334 [A] | T:92C V:28mm/s | HP: 96.8% (-0.58%)
-[08:40] [MOTOR 3] terminat JOB-326 [A] | T:100C V:29mm/s | HP: 96.9% (-0.51%)
-[08:40] [MOTOR 8] inceput JOB-363 [N] | T:75C V:5mm/s97.8
-[08:40] [MOTOR 11] inceput JOB-350 [A] | T:92C V:28mm/s96.8
-[08:40] [MOTOR 3] inceput JOB-342 [N] | T:100C V:29mm/s96.9
-[08:40] [MOTOR 4] terminat JOB-311 [N] | T:109C V:5mm/s
-[08:40] [MOTOR 2] terminat JOB-309 [N] | T:90C V:5mm/s
-[08:40] [MOTOR 4] inceput JOB-327 [A] | T:109C V:5mm/s93.1
-[08:40] [MOTOR 2] inceput JOB-325 [N] | T:90C V:5mm/s97.2
-[08:40] [MOTOR 14] terminat JOB-337 [N] | T:81C V:5mm/s
-[08:40] [MOTOR 14] inceput JOB-353 [N] | T:81C V:5mm/s97.4
-[08:40] [MOTOR 13] terminat JOB-336 [A] | T:141C V:28mm/s | HP: 88.2% (-3.91%)
-[08:40] [MOTOR 12] terminat JOB-351 [N] | T:57C V:5mm/s
-[08:40] [MOTOR 6] terminat JOB-361 [N] | T:117C V:5mm/s | HP: 83.0% (-0.74%)
-[08:40] [MOTOR 13] inceput JOB-352 [A] | T:141C V:28mm/s88.2
-[08:40] [MOTOR 12] inceput JOB-367 [A] | T:57C V:5mm/s98.0
-[08:40] [MOTOR 6] inceput JOB-377 [A] | T:117C V:5mm/s83.0
-[08:40] [MOTOR 16] terminat JOB-339 [A] | T:117C V:30mm/s | HP: 90.8% (-1.39%)
-[08:40] [MOTOR 16] inceput JOB-355 [A] | T:117C V:30mm/s90.8
-[08:40] [MOTOR 10] terminat JOB-349 [N] | T:88C V:5mm/s
-[08:40] [MOTOR 11] terminat JOB-350 [A] | T:106C V:31mm/s | HP: 96.1% (-0.70%)
-[08:40] [MOTOR 5] terminat JOB-328 [N] | T:125C V:5mm/s | HP: 91.8% (-1.66%)
-[08:40] [MOTOR 15] terminat JOB-338 [N] | T:65C V:5mm/s
-[08:40] [MOTOR 10] inceput JOB-365 [N] | T:88C V:5mm/s97.2
-[08:40] [MOTOR 11] inceput JOB-366 [N] | T:106C V:31mm/s96.1
-[08:40] [MOTOR 5] inceput JOB-344 [A] | T:125C V:5mm/s91.8
-[08:40] [MOTOR 15] inceput JOB-354 [N] | T:65C V:5mm/s97.9
-[08:40] [MOTOR 2] terminat JOB-325 [N] | T:86C V:5mm/s
-[08:40] [MOTOR 14] terminat JOB-353 [N] | T:78C V:5mm/s
-[08:40] [MOTOR 2] inceput JOB-341 [A] | T:86C V:5mm/s97.1
-[08:40] [MOTOR 14] inceput JOB-369 [A] | T:78C V:5mm/s97.4
-[08:40] [MOTOR 8] terminat JOB-363 [N] | T:70C V:5mm/s
-[08:40] [MOTOR 8] inceput JOB-379 [N] | T:70C V:5mm/s97.8
-[08:40] [MOTOR 9] terminat JOB-332 [A] | T:166C V:31mm/s | HP: 40.9% (-34.69%)
-[08:40] [MOTOR 3] terminat JOB-342 [N] | T:94C V:5mm/s
-[08:40] [MOTOR 9] ! PROTECTIE (166C). Racire...
-[08:40] [MOTOR 3] inceput JOB-358 [N] | T:94C V:5mm/s96.7
-[08:40] [MOTOR 1] terminat JOB-340 [A] | T:137C V:29mm/s | HP: 84.7% (-5.44%)
-[08:40] [MOTOR 1] inceput JOB-356 [A] | T:137C V:29mm/s84.7
-[08:40] [MOTOR 4] terminat JOB-327 [A] | T:130C V:27mm/s | HP: 89.7% (-3.36%)
-[08:40] [MOTOR 4] inceput JOB-343 [A] | T:130C V:27mm/s89.7
-[08:40] [MOTOR 13] terminat JOB-352 [A] | T:158C V:31mm/s | HP: 70.1% (-18.09%)
-[08:40] [MOTOR 5] terminat JOB-344 [A] | T:136C V:28mm/s | HP: 89.1% (-2.73%)
-[08:40] [MOTOR 13] ! PROTECTIE (158C). Racire...
-[08:40] [MOTOR 5] inceput JOB-360 [A] | T:136C V:28mm/s89.1
-[08:40] [MOTOR 12] terminat JOB-367 [A] | T:76C V:31mm/s
-[08:40] [MOTOR 6] terminat JOB-377 [A] | T:136C V:28mm/s | HP: 78.5% (-4.49%)
-[08:40] [MOTOR 16] terminat JOB-355 [A] | T:130C V:29mm/s | HP: 88.6% (-2.23%)
-[08:40] [MOTOR 12] inceput JOB-383 [N] | T:76C V:31mm/s97.5
-[08:40] [MOTOR 6] inceput JOB-393 [A] | T:136C V:28mm/s78.5
-[08:40] [MOTOR 16] inceput JOB-371 [A] | T:130C V:29mm/s88.6
-[08:40] [MOTOR 14] terminat JOB-369 [A] | T:92C V:33mm/s | HP: 96.8% (-0.52%)
-[08:40] [MOTOR 1] terminat JOB-356 [A] | T:148C V:28mm/s | HP: 79.0% (-5.67%)
-[08:40] [MOTOR 14] inceput JOB-385 [N] | T:92C V:33mm/s96.8
-[08:40] [MOTOR 1] inceput JOB-372 [N] | T:148C V:28mm/s79.0
-[08:40] [MOTOR 10] terminat JOB-365 [N] | T:83C V:5mm/s
-[08:40] [MOTOR 11] terminat JOB-366 [N] | T:101C V:5mm/s
-[08:40] [MOTOR 10] inceput JOB-381 [N] | T:83C V:5mm/s97.1
-[08:40] [MOTOR 11] inceput JOB-382 [A] | T:101C V:5mm/s95.8
-[08:40] [MOTOR 8] terminat JOB-379 [N] | T:66C V:5mm/s
-[08:40] [MOTOR 15] terminat JOB-354 [N] | T:60C V:5mm/s
-[08:40] [MOTOR 8] inceput JOB-395 [A] | T:66C V:5mm/s97.7
-[08:40] [MOTOR 15] inceput JOB-370 [N] | T:60C V:5mm/s97.9
-[08:40] [MOTOR 4] terminat JOB-343 [A] | T:142C V:28mm/s | HP: 85.2% (-4.47%)
-[08:40] [MOTOR 2] terminat JOB-341 [A] | T:106C V:30mm/s | HP: 96.1% (-0.96%)
-[08:40] [MOTOR 4] inceput JOB-359 [N] | T:142C V:28mm/s85.2
-[08:40] [MOTOR 2] inceput JOB-357 [A] | T:106C V:30mm/s96.1
-[08:40] [MOTOR 3] terminat JOB-358 [N] | T:88C V:5mm/s
-[08:40] [MOTOR 3] inceput JOB-374 [A] | T:88C V:5mm/s96.5
-[08:40] [MOTOR 5] terminat JOB-360 [A] | T:152C V:32mm/s | HP: 78.6% (-10.53%)
-[08:40] [MOTOR 5] ! PROTECTIE (152C). Racire...
-[08:40] [MOTOR 12] terminat JOB-383 [N] | T:71C V:5mm/s
-[08:40] [MOTOR 12] inceput JOB-399 [N] | T:71C V:5mm/s97.5
-[08:40] [MOTOR 6] terminat JOB-393 [A] | T:154C V:28mm/s | HP: 65.1% (-13.47%)
-[08:40] [MOTOR 15] terminat JOB-370 [N] | T:57C V:5mm/s
-[08:40] [MOTOR 15] inceput JOB-386 [N] | T:57C V:5mm/s97.9
-[08:40] [MOTOR 1] terminat JOB-372 [N] | T:144C V:5mm/s | HP: 73.4% (-5.62%)
-[08:40] [MOTOR 2] terminat JOB-357 [A] | T:116C V:28mm/s | HP: 95.3% (-0.80%)
-[08:40] [MOTOR 10] terminat JOB-381 [N] | T:78C V:5mm/s
-[08:40] [MOTOR 16] terminat JOB-371 [A] | T:150C V:30mm/s | HP: 76.4% (-12.18%)
-[08:40] [MOTOR 1] inceput JOB-388 [N] | T:144C V:5mm/s73.4
-[08:40] [MOTOR 2] inceput JOB-373 [N] | T:116C V:28mm/s95.3
-[08:40] [MOTOR 10] inceput JOB-397 [A] | T:78C V:5mm/s97.1
-[08:40] [MOTOR 16] ! PROTECTIE (150C). Racire...
-[08:40] [MOTOR 8] terminat JOB-395 [A] | T:82C V:28mm/s
-[08:40] [MOTOR 14] terminat JOB-385 [N] | T:87C V:5mm/s
-[08:40] [MOTOR 11] terminat JOB-382 [A] | T:121C V:32mm/s | HP: 93.7% (-2.11%)
-[08:40] [MOTOR 11] inceput JOB-398 [A] | T:121C V:32mm/s93.7
-[08:40] [MOTOR 4] terminat JOB-359 [N] | T:137C V:5mm/s | HP: 81.1% (-4.14%)
-[08:40] [MOTOR 4] inceput JOB-375 [N] | T:137C V:5mm/s81.1
-[08:40] [MOTOR 3] terminat JOB-374 [A] | T:102C V:31mm/s | HP: 96.0% (-0.59%)
-[08:40] [MOTOR 3] inceput JOB-390 [N] | T:102C V:31mm/s96.0
-[08:40] [MOTOR 12] terminat JOB-399 [N] | T:67C V:5mm/s
-[08:40] [MOTOR 1] terminat JOB-388 [N] | T:139C V:5mm/s | HP: 69.1% (-4.26%)
-[08:40] [MOTOR 11] terminat JOB-398 [A] | T:133C V:27mm/s | HP: 91.2% (-2.42%)
-[08:40] [MOTOR 2] terminat JOB-373 [N] | T:111C V:5mm/s | HP: 94.6% (-0.71%)
-[08:40] [MOTOR 10] terminat JOB-397 [A] | T:96C V:32mm/s | HP: 96.4% (-0.68%)
-[08:40] [MOTOR 4] terminat JOB-375 [N] | T:134C V:5mm/s | HP: 78.9% (-2.19%)
-[08:40] [MOTOR 2] inceput JOB-389 [N] | T:111C V:5mm/s94.6
-[08:40] [MOTOR 4] inceput JOB-391 [A] | T:134C V:5mm/s78.9
-[08:40] [MOTOR 15] terminat JOB-386 [N] | T:51C V:5mm/s
-[08:40] [MOTOR 3] terminat JOB-390 [N] | T:96C V:5mm/s
-[08:40] [MOTOR 4] terminat JOB-391 [A] | T:146C V:33mm/s | HP: 73.5% (-5.39%)
-[08:40] [MOTOR 2] terminat JOB-389 [N] | T:108C V:5mm/s
-[08:40] [MOTOR 7] REPORNIRE.
-[08:40] [MOTOR 7] terminat JOB-298 [N] | T:81C V:5mm/s
-[08:40] [MOTOR 7] inceput JOB-314 [N] | T:81C V:5mm/s55.5
-[08:40] [MOTOR 7] terminat JOB-314 [N] | T:78C V:5mm/s
-[08:40] [MOTOR 7] inceput JOB-330 [N] | T:78C V:5mm/s55.4
-[08:40] [MOTOR 13] REPORNIRE.
-[08:40] [MOTOR 7] terminat JOB-330 [N] | T:74C V:5mm/s
-[08:40] [MOTOR 7] inceput JOB-346 [N] | T:74C V:5mm/s55.4
-[08:40] [MOTOR 9] REPORNIRE.
-[08:40] [MOTOR 5] REPORNIRE.
-[08:40] [MOTOR 16] REPORNIRE.
-[08:40] [MOTOR 13] terminat JOB-368 [A] | T:106C V:30mm/s | HP: 51.9% (-0.91%)
-[08:40] [MOTOR 13] inceput JOB-384 [A] | T:106C V:30mm/s51.9
-[08:40] [MOTOR 7] terminat JOB-346 [N] | T:69C V:5mm/s
-[08:40] [MOTOR 7] inceput JOB-362 [N] | T:69C V:5mm/s55.4
-[08:40] [MOTOR 5] terminat JOB-376 [A] | T:107C V:33mm/s | HP: 66.5% (-1.10%)
-[08:40] [MOTOR 16] terminat JOB-387 [A] | T:100C V:30mm/s | HP: 66.0% (-0.61%)
-[08:40] [MOTOR 9] terminat JOB-348 [A] | T:106C V:32mm/s | HP: 10.4% (-1.09%)
-[08:40] [MOTOR 5] inceput JOB-392 [N] | T:107C V:33mm/s66.5
-[08:40] [MOTOR 9] inceput JOB-364 [A] | T:106C V:32mm/s10.4
-[08:40] [MOTOR 13] terminat JOB-384 [A] | T:125C V:28mm/s | HP: 49.7% (-2.19%)
-[08:40] [MOTOR 7] terminat JOB-362 [N] | T:64C V:5mm/s
-[08:40] [MOTOR 7] inceput JOB-378 [N] | T:64C V:5mm/s55.3
-[08:40] [MOTOR 5] terminat JOB-392 [N] | T:102C V:5mm/s
-[08:40] [MOTOR 9] terminat JOB-364 [A] | T:127C V:29mm/s | HP: 7.5% (-2.91%)
-[08:40] [MOTOR 9] inceput JOB-380 [A] | T:127C V:29mm/s7.5
-[08:40] [MOTOR 7] terminat JOB-378 [N] | T:61C V:5mm/s
-[08:40] [MOTOR 7] inceput JOB-394 [N] | T:61C V:5mm/s55.3
-[08:40] [MOTOR 7] terminat JOB-394 [N] | T:57C V:5mm/s
-[08:40] [MOTOR 9] terminat JOB-380 [A] | T:148C V:32mm/s [MORT]
-[08:40] [SISTEM] >>> Oprire Motoare... <<<
-[08:40] [MOTOR 10] OFFLINE | Final HP: 96.13% [NOU (RODAT)]
-[08:40] [MOTOR 13] OFFLINE | Final HP: 48.14% [NECESITA REVIZIE]
-[08:40] [MOTOR 6] OFFLINE | Final HP: 51.21% [UZURA MEDIE]
-[08:40] [MOTOR 9] OFFLINE | Final HP: 0.00% [DEFECT]
-[08:40] [MOTOR 14] OFFLINE | Final HP: 96.59% [NOU (RODAT)]
-[08:40] [MOTOR 15] OFFLINE | Final HP: 97.88% [NOU (RODAT)]
-[08:40] [MOTOR 12] OFFLINE | Final HP: 97.45% [NOU (RODAT)]
-[08:40] [MOTOR 16] OFFLINE | Final HP: 65.67% [UZURA MEDIE]
-[08:40] [MOTOR 2] OFFLINE | Final HP: 93.63% [UZURA NORMALA]
-[08:40] [MOTOR 1] OFFLINE | Final HP: 63.96% [UZURA MEDIE]
-[08:40] [MOTOR 11] OFFLINE | Final HP: 87.84% [UZURA NORMALA]
-[08:40] [MOTOR 5] OFFLINE | Final HP: 65.89% [UZURA MEDIE]
-[08:40] [MOTOR 8] OFFLINE | Final HP: 97.28% [NOU (RODAT)]
-[08:40] [MOTOR 3] OFFLINE | Final HP: 95.42% [NOU (RODAT)]
-[08:40] [MOTOR 4] OFFLINE | Final HP: 65.52% [UZURA MEDIE]
-[08:40] [MOTOR 7] OFFLINE | Final HP: 55.30% [UZURA MEDIE]
+[13:31] [SISTEM] START SIMULARE (16 MOTOARE)
+[13:31] [MOTOR 1] ONLINE | T: 25.0C | HP: 100%
+[13:31] [MOTOR 2] ONLINE | T: 25.0C | HP: 100%
+[13:31] [MOTOR 3] ONLINE | T: 25.0C | HP: 100%
+[13:31] [MOTOR 4] ONLINE | T: 25.0C | HP: 100%
+[13:31] [MOTOR 5] ONLINE | T: 25.0C | HP: 100%
+[13:31] [MOTOR 6] ONLINE | T: 25.0C | HP: 100%
+[13:31] [MOTOR 7] ONLINE | T: 25.0C | HP: 100%
+[13:31] [MOTOR 8] ONLINE | T: 25.0C | HP: 100%
+[13:31] [MOTOR 9] ONLINE | T: 25.0C | HP: 100%
+[13:31] [MOTOR 10] ONLINE | T: 25.0C | HP: 100%
+[13:31] [MOTOR 11] ONLINE | T: 25.0C | HP: 100%
+[13:31] [MOTOR 12] ONLINE | T: 25.0C | HP: 100%
+[13:31] [MOTOR 13] ONLINE | T: 25.0C | HP: 100%
+[13:31] [MOTOR 14] ONLINE | T: 25.0C | HP: 100%
+[13:31] [MOTOR 15] ONLINE | T: 25.0C | HP: 100%
+[13:31] [MOTOR 16] ONLINE | T: 25.0C | HP: 100%
+[13:31] [SISTEM] >>> SARCINA INTENSIVA (300 JOB-URI) <<<
+[13:31] [MOTOR 1] inceput JOB-100 [N] | T:25C V:1mm/s Hp:100.0%
+[13:31] [MOTOR 2] inceput JOB-101 [A] | T:25C V:1mm/s Hp:100.0%
+[13:31] [MOTOR 3] inceput JOB-102 [A] | T:25C V:1mm/s Hp:100.0%
+[13:31] [MOTOR 4] inceput JOB-103 [N] | T:25C V:2mm/s Hp:100.0%
+[13:31] [MOTOR 5] inceput JOB-104 [N] | T:25C V:1mm/s Hp:100.0%
+[13:31] [MOTOR 6] inceput JOB-105 [A] | T:25C V:1mm/s Hp:100.0%
+[13:31] [MOTOR 7] inceput JOB-106 [N] | T:25C V:2mm/s Hp:100.0%
+[13:31] [MOTOR 8] inceput JOB-107 [N] | T:25C V:2mm/s Hp:100.0%
+[13:31] [MOTOR 9] inceput JOB-108 [N] | T:25C V:2mm/s Hp:100.0%
+[13:31] [MOTOR 10] inceput JOB-109 [A] | T:25C V:1mm/s Hp:100.0%
+[13:31] [MOTOR 11] inceput JOB-110 [A] | T:25C V:1mm/s Hp:100.0%
+[13:31] [MOTOR 12] inceput JOB-111 [N] | T:25C V:1mm/s Hp:100.0%
+[13:31] [MOTOR 13] inceput JOB-112 [A] | T:25C V:1mm/s Hp:100.0%
+[13:31] [MOTOR 14] inceput JOB-113 [A] | T:25C V:1mm/s Hp:100.0%
+[13:31] [MOTOR 15] inceput JOB-114 [N] | T:25C V:2mm/s Hp:100.0%
+[13:31] [MOTOR 16] inceput JOB-115 [A] | T:25C V:1mm/s Hp:100.0%
+[13:31] [MOTOR 11] terminat JOB-110 [A] | T:50C V:32mm/s | Hp: 99.4% (-0.65%)
+[13:31] [MOTOR 1] terminat JOB-100 [N] | T:25C V:5mm/s
+[13:31] [MOTOR 11] inceput JOB-126 [A] | T:50C V:32mm/s Hp:99.4%
+[13:31] [MOTOR 1] inceput JOB-116 [N] | T:25C V:5mm/s Hp:100.0%
+[13:31] [MOTOR 9] terminat JOB-108 [N] | T:25C V:5mm/s
+[13:31] [MOTOR 9] inceput JOB-124 [N] | T:25C V:5mm/s Hp:100.0%
+[13:31] [MOTOR 4] terminat JOB-103 [N] | T:25C V:5mm/s
+[13:31] [MOTOR 6] terminat JOB-105 [A] | T:52C V:32mm/s | Hp: 99.3% (-0.66%)
+[13:31] [MOTOR 4] inceput JOB-119 [N] | T:25C V:5mm/s Hp:100.0%
+[13:31] [MOTOR 6] inceput JOB-121 [N] | T:52C V:32mm/s Hp:99.3%
+[13:31] [MOTOR 8] terminat JOB-107 [N] | T:25C V:5mm/s
+[13:31] [MOTOR 7] terminat JOB-106 [N] | T:25C V:5mm/s
+[13:31] [MOTOR 8] inceput JOB-123 [A] | T:25C V:5mm/s Hp:100.0%
+[13:31] [MOTOR 7] inceput JOB-122 [N] | T:25C V:5mm/s Hp:100.0%
+[13:31] [MOTOR 2] terminat JOB-101 [A] | T:57C V:30mm/s | Hp: 99.3% (-0.73%)
+[13:31] [MOTOR 2] inceput JOB-117 [N] | T:57C V:30mm/s Hp:99.3%
+[13:31] [MOTOR 3] terminat JOB-102 [A] | T:57C V:29mm/s | Hp: 99.3% (-0.66%)
+[13:31] [MOTOR 3] inceput JOB-118 [A] | T:57C V:29mm/s Hp:99.3%
+[13:31] [MOTOR 14] terminat JOB-113 [A] | T:57C V:30mm/s | Hp: 99.3% (-0.69%)
+[13:31] [MOTOR 13] terminat JOB-112 [A] | T:57C V:32mm/s | Hp: 99.2% (-0.79%)
+[13:31] [MOTOR 14] inceput JOB-129 [A] | T:57C V:30mm/s Hp:99.3%
+[13:31] [MOTOR 13] inceput JOB-128 [A] | T:57C V:32mm/s Hp:99.2%
+[13:31] [MOTOR 16] terminat JOB-115 [A] | T:57C V:32mm/s | Hp: 99.2% (-0.80%)
+[13:31] [MOTOR 12] terminat JOB-111 [N] | T:25C V:5mm/s
+[13:31] [MOTOR 16] inceput JOB-131 [A] | T:57C V:32mm/s Hp:99.2%
+[13:31] [MOTOR 12] inceput JOB-127 [N] | T:25C V:5mm/s Hp:100.0%
+[13:31] [MOTOR 5] terminat JOB-104 [N] | T:25C V:5mm/s
+[13:31] [MOTOR 15] terminat JOB-114 [N] | T:25C V:5mm/s
+[13:31] [MOTOR 5] inceput JOB-120 [A] | T:25C V:5mm/s Hp:100.0%
+[13:31] [MOTOR 15] inceput JOB-130 [N] | T:25C V:5mm/s Hp:100.0%
+[13:31] [MOTOR 10] terminat JOB-109 [A] | T:60C V:32mm/s | Hp: 99.1% (-0.90%)
+[13:31] [MOTOR 10] inceput JOB-125 [A] | T:60C V:32mm/s Hp:99.1%
+[13:31] [MOTOR 11] terminat JOB-126 [A] | T:77C V:27mm/s | Hp: 98.8% (-0.55%)
+[13:31] [MOTOR 11] inceput JOB-142 [A] | T:77C V:27mm/s Hp:98.8%
+[13:31] [MOTOR 6] terminat JOB-121 [N] | T:45C V:5mm/s
+[13:31] [MOTOR 6] inceput JOB-137 [N] | T:45C V:5mm/s Hp:99.3%
+[13:31] [MOTOR 8] terminat JOB-123 [A] | T:51C V:27mm/s
+[13:31] [MOTOR 8] inceput JOB-139 [N] | T:51C V:27mm/s Hp:99.5%
+[13:31] [MOTOR 1] terminat JOB-116 [N] | T:25C V:5mm/s
+[13:31] [MOTOR 1] inceput JOB-132 [A] | T:25C V:5mm/s Hp:100.0%
+[13:31] [MOTOR 7] terminat JOB-122 [N] | T:25C V:5mm/s
+[13:31] [MOTOR 7] inceput JOB-138 [A] | T:25C V:5mm/s Hp:100.0%
+[13:31] [MOTOR 4] terminat JOB-119 [N] | T:25C V:5mm/s
+[13:31] [MOTOR 5] terminat JOB-120 [A] | T:51C V:28mm/s
+[13:31] [MOTOR 15] terminat JOB-130 [N] | T:25C V:5mm/s
+[13:31] [MOTOR 4] inceput JOB-135 [A] | T:25C V:5mm/s Hp:100.0%
+[13:31] [MOTOR 5] inceput JOB-136 [N] | T:51C V:28mm/s Hp:99.5%
+[13:31] [MOTOR 15] inceput JOB-146 [A] | T:25C V:5mm/s Hp:100.0%
+[13:31] [MOTOR 9] terminat JOB-124 [N] | T:25C V:5mm/s
+[13:31] [MOTOR 9] inceput JOB-140 [A] | T:25C V:5mm/s Hp:100.0%
+[13:31] [MOTOR 16] terminat JOB-131 [A] | T:85C V:27mm/s | Hp: 98.5% (-0.66%)
+[13:31] [MOTOR 16] inceput JOB-147 [N] | T:85C V:27mm/s Hp:98.5%
+[13:31] [MOTOR 3] terminat JOB-118 [A] | T:85C V:30mm/s | Hp: 98.5% (-0.82%)
+[13:31] [MOTOR 3] inceput JOB-134 [N] | T:85C V:30mm/s Hp:98.5%
+[13:31] [MOTOR 2] terminat JOB-117 [N] | T:48C V:5mm/s
+[13:31] [MOTOR 2] inceput JOB-133 [A] | T:48C V:5mm/s Hp:99.3%
+[13:31] [MOTOR 13] terminat JOB-128 [A] | T:89C V:28mm/s | Hp: 98.4% (-0.84%)
+[13:31] [MOTOR 13] inceput JOB-144 [N] | T:89C V:28mm/s Hp:98.4%
+[13:31] [MOTOR 14] terminat JOB-129 [A] | T:91C V:28mm/s | Hp: 98.4% (-0.94%)
+[13:31] [MOTOR 14] inceput JOB-145 [N] | T:91C V:28mm/s Hp:98.4%
+[13:31] [MOTOR 10] terminat JOB-125 [A] | T:91C V:30mm/s | Hp: 98.1% (-1.00%)
+[13:31] [MOTOR 10] inceput JOB-141 [A] | T:91C V:30mm/s Hp:98.1%
+[13:31] [MOTOR 12] terminat JOB-127 [N] | T:25C V:5mm/s
+[13:31] [SISTEM] >>> Asteptare finalizare sarcini... <<<
+[13:31] [MOTOR 12] inceput JOB-143 [N] | T:25C V:5mm/s Hp:100.0%
+[13:31] [MOTOR 6] terminat JOB-137 [N] | T:37C V:5mm/s
+[13:31] [MOTOR 6] inceput JOB-153 [A] | T:37C V:5mm/s Hp:99.3%
+[13:31] [MOTOR 7] terminat JOB-138 [A] | T:50C V:29mm/s | Hp: 99.5% (-0.50%)
+[13:31] [MOTOR 7] inceput JOB-154 [A] | T:50C V:29mm/s Hp:99.5%
+[13:31] [MOTOR 8] terminat JOB-139 [N] | T:43C V:5mm/s
+[13:31] [MOTOR 8] inceput JOB-155 [A] | T:43C V:5mm/s Hp:99.5%
+[13:31] [MOTOR 15] terminat JOB-146 [A] | T:51C V:32mm/s | Hp: 99.3% (-0.66%)
+[13:31] [MOTOR 15] inceput JOB-162 [N] | T:51C V:32mm/s Hp:99.3%
+[13:31] [MOTOR 11] terminat JOB-142 [A] | T:111C V:30mm/s | Hp: 96.7% (-2.13%)
+[13:31] [MOTOR 9] terminat JOB-140 [A] | T:52C V:32mm/s | Hp: 99.3% (-0.70%)
+[13:31] [MOTOR 11] inceput JOB-158 [A] | T:111C V:30mm/s Hp:96.7%
+[13:31] [MOTOR 9] inceput JOB-156 [A] | T:52C V:32mm/s Hp:99.3%
+[13:31] [MOTOR 3] terminat JOB-134 [N] | T:77C V:5mm/s
+[13:31] [MOTOR 4] terminat JOB-135 [A] | T:56C V:29mm/s | Hp: 99.4% (-0.64%)
+[13:31] [MOTOR 3] inceput JOB-150 [N] | T:77C V:5mm/s Hp:98.4%
+[13:31] [MOTOR 4] inceput JOB-151 [N] | T:56C V:29mm/s Hp:99.4%
+[13:31] [MOTOR 16] terminat JOB-147 [N] | T:76C V:5mm/s
+[13:31] [MOTOR 2] terminat JOB-133 [A] | T:77C V:29mm/s | Hp: 98.6% (-0.67%)
+[13:31] [MOTOR 1] terminat JOB-132 [A] | T:60C V:30mm/s | Hp: 99.2% (-0.80%)
+[13:31] [MOTOR 10] terminat JOB-141 [A] | T:117C V:30mm/s | Hp: 96.1% (-2.04%)
+[13:31] [MOTOR 16] inceput JOB-163 [N] | T:76C V:5mm/s Hp:98.4%
+[13:31] [MOTOR 2] inceput JOB-149 [A] | T:77C V:29mm/s Hp:98.6%
+[13:31] [MOTOR 1] inceput JOB-148 [A] | T:60C V:30mm/s Hp:99.2%
+[13:31] [MOTOR 10] inceput JOB-157 [A] | T:117C V:30mm/s Hp:96.1%
+[13:31] [MOTOR 5] terminat JOB-136 [N] | T:41C V:5mm/s
+[13:31] [MOTOR 5] inceput JOB-152 [N] | T:41C V:5mm/s Hp:99.5%
+[13:31] [MOTOR 12] terminat JOB-143 [N] | T:25C V:5mm/s
+[13:31] [MOTOR 12] inceput JOB-159 [A] | T:25C V:5mm/s Hp:100.0%
+[13:31] [MOTOR 13] terminat JOB-144 [N] | T:79C V:5mm/s
+[13:31] [MOTOR 13] inceput JOB-160 [N] | T:79C V:5mm/s Hp:98.2%
+[13:31] [MOTOR 14] terminat JOB-145 [N] | T:81C V:5mm/s
+[13:31] [MOTOR 14] inceput JOB-161 [N] | T:81C V:5mm/s Hp:98.2%
+[13:31] [MOTOR 8] terminat JOB-155 [A] | T:69C V:31mm/s | Hp: 98.9% (-0.67%)
+[13:31] [MOTOR 8] inceput JOB-171 [N] | T:69C V:31mm/s Hp:98.9%
+[13:31] [MOTOR 11] terminat JOB-158 [A] | T:136C V:32mm/s | Hp: 90.3% (-6.35%)
+[13:31] [MOTOR 11] inceput JOB-174 [A] | T:136C V:32mm/s Hp:90.3%
+[13:31] [MOTOR 7] terminat JOB-154 [A] | T:80C V:29mm/s | Hp: 98.8% (-0.74%)
+[13:31] [MOTOR 6] terminat JOB-153 [A] | T:70C V:31mm/s | Hp: 98.5% (-0.85%)
+[13:31] [MOTOR 7] inceput JOB-170 [A] | T:80C V:29mm/s Hp:98.8%
+[13:31] [MOTOR 6] inceput JOB-169 [A] | T:70C V:31mm/s Hp:98.5%
+[13:31] [MOTOR 4] terminat JOB-151 [N] | T:48C V:5mm/s
+[13:31] [MOTOR 9] terminat JOB-156 [A] | T:83C V:30mm/s | Hp: 98.5% (-0.84%)
+[13:31] [MOTOR 4] inceput JOB-167 [N] | T:48C V:5mm/s Hp:99.4%
+[13:31] [MOTOR 9] inceput JOB-172 [A] | T:83C V:30mm/s Hp:98.5%
+[13:31] [MOTOR 15] terminat JOB-162 [N] | T:42C V:5mm/s
+[13:31] [MOTOR 15] inceput JOB-178 [N] | T:42C V:5mm/s Hp:99.3%
+[13:31] [MOTOR 1] terminat JOB-148 [A] | T:87C V:31mm/s | Hp: 98.4% (-0.84%)
+[13:31] [MOTOR 16] terminat JOB-163 [N] | T:68C V:5mm/s
+[13:31] [MOTOR 2] terminat JOB-149 [A] | T:105C V:29mm/s | Hp: 97.3% (-1.29%)
+[13:31] [MOTOR 1] inceput JOB-164 [N] | T:87C V:31mm/s Hp:98.4%
+[13:31] [MOTOR 16] inceput JOB-179 [A] | T:68C V:5mm/s Hp:98.4%
+[13:31] [MOTOR 2] inceput JOB-165 [N] | T:105C V:29mm/s Hp:97.3%
+[13:31] [MOTOR 3] terminat JOB-150 [N] | T:68C V:5mm/s
+[13:31] [MOTOR 3] inceput JOB-166 [A] | T:68C V:5mm/s Hp:98.4%
+[13:31] [MOTOR 5] terminat JOB-152 [N] | T:32C V:5mm/s
+[13:31] [MOTOR 5] inceput JOB-168 [A] | T:32C V:5mm/s Hp:99.5%
+[13:31] [MOTOR 10] terminat JOB-157 [A] | T:150C V:29mm/s | Hp: 75.5% (-20.52%)
+[13:31] [MOTOR 10] ! PROTECTIE (150C). Racire...
+[13:31] [MOTOR 12] terminat JOB-159 [A] | T:58C V:29mm/s | Hp: 99.3% (-0.70%)
+[13:31] [MOTOR 12] inceput JOB-175 [A] | T:58C V:29mm/s Hp:99.3%
+[13:31] [MOTOR 14] terminat JOB-161 [N] | T:72C V:5mm/s
+[13:31] [MOTOR 13] terminat JOB-160 [N] | T:69C V:5mm/s
+[13:31] [MOTOR 14] inceput JOB-177 [N] | T:72C V:5mm/s Hp:98.1%
+[13:31] [MOTOR 13] inceput JOB-176 [A] | T:69C V:5mm/s Hp:98.2%
+[13:31] [MOTOR 8] terminat JOB-171 [N] | T:61C V:5mm/s
+[13:31] [MOTOR 8] inceput JOB-187 [A] | T:61C V:5mm/s Hp:98.8%
+[13:31] [MOTOR 6] terminat JOB-169 [A] | T:98C V:32mm/s | Hp: 97.4% (-1.09%)
+[13:31] [MOTOR 6] inceput JOB-185 [A] | T:98C V:32mm/s Hp:97.4%
+[13:31] [MOTOR 4] terminat JOB-167 [N] | T:41C V:5mm/s
+[13:31] [MOTOR 9] terminat JOB-172 [A] | T:109C V:29mm/s | Hp: 97.0% (-1.45%)
+[13:31] [MOTOR 4] inceput JOB-183 [N] | T:41C V:5mm/s Hp:99.4%
+[13:31] [MOTOR 9] inceput JOB-188 [A] | T:109C V:29mm/s Hp:97.0%
+[13:31] [MOTOR 7] terminat JOB-170 [A] | T:111C V:31mm/s | Hp: 96.8% (-1.94%)
+[13:31] [MOTOR 7] inceput JOB-186 [N] | T:111C V:31mm/s Hp:96.8%
+[13:31] [MOTOR 11] terminat JOB-174 [A] | T:170C V:32mm/s | Hp: 7.6% (-82.70%)
+[13:31] [MOTOR 15] terminat JOB-178 [N] | T:34C V:5mm/s
+[13:31] [MOTOR 11] ! PROTECTIE (170C). Racire...
+[13:31] [MOTOR 15] inceput JOB-194 [A] | T:34C V:5mm/s Hp:99.3%
+[13:31] [MOTOR 16] terminat JOB-179 [A] | T:95C V:29mm/s | Hp: 97.5% (-0.90%)
+[13:31] [MOTOR 1] terminat JOB-164 [N] | T:79C V:5mm/s
+[13:31] [MOTOR 16] inceput JOB-195 [N] | T:95C V:29mm/s Hp:97.5%
+[13:31] [MOTOR 1] inceput JOB-180 [N] | T:79C V:5mm/s Hp:98.2%
+[13:31] [MOTOR 2] terminat JOB-165 [N] | T:97C V:5mm/s
+[13:31] [MOTOR 2] inceput JOB-181 [A] | T:97C V:5mm/s Hp:96.9%
+[13:31] [MOTOR 5] terminat JOB-168 [A] | T:59C V:29mm/s | Hp: 98.9% (-0.57%)
+[13:31] [MOTOR 5] inceput JOB-184 [N] | T:59C V:29mm/s Hp:98.9%
+[13:31] [MOTOR 3] terminat JOB-166 [A] | T:100C V:28mm/s | Hp: 97.2% (-1.17%)
+[13:31] [MOTOR 3] inceput JOB-182 [N] | T:100C V:28mm/s Hp:97.2%
+[13:31] [MOTOR 13] terminat JOB-176 [A] | T:96C V:28mm/s | Hp: 97.3% (-0.89%)
+[13:31] [MOTOR 12] terminat JOB-175 [A] | T:88C V:27mm/s | Hp: 98.5% (-0.78%)
+[13:31] [MOTOR 13] inceput JOB-192 [N] | T:96C V:28mm/s Hp:97.3%
+[13:31] [MOTOR 12] inceput JOB-191 [A] | T:88C V:27mm/s Hp:98.5%
+[13:31] [MOTOR 6] terminat JOB-185 [A] | T:123C V:31mm/s | Hp: 94.6% (-2.83%)
+[13:31] [MOTOR 14] terminat JOB-177 [N] | T:62C V:5mm/s
+[13:31] [MOTOR 6] inceput JOB-201 [N] | T:123C V:31mm/s Hp:94.6%
+[13:31] [MOTOR 14] inceput JOB-193 [A] | T:62C V:5mm/s Hp:98.1%
+[13:31] [MOTOR 8] terminat JOB-187 [A] | T:93C V:28mm/s | Hp: 97.9% (-0.94%)
+[13:31] [MOTOR 8] inceput JOB-203 [A] | T:93C V:28mm/s Hp:97.9%
+[13:31] [MOTOR 7] terminat JOB-186 [N] | T:104C V:5mm/s | Hp: 96.2% (-0.60%)
+[13:31] [MOTOR 7] inceput JOB-202 [A] | T:104C V:5mm/s Hp:96.2%
+[13:31] [MOTOR 2] terminat JOB-181 [A] | T:122C V:29mm/s | Hp: 94.3% (-2.61%)
+[13:31] [MOTOR 2] inceput JOB-197 [A] | T:122C V:29mm/s Hp:94.3%
+[13:31] [MOTOR 4] terminat JOB-183 [N] | T:32C V:5mm/s
+[13:31] [MOTOR 4] inceput JOB-199 [A] | T:32C V:5mm/s Hp:99.4%
+[13:31] [MOTOR 16] terminat JOB-195 [N] | T:87C V:5mm/s
+[13:31] [MOTOR 16] inceput JOB-211 [A] | T:87C V:5mm/s Hp:97.3%
+[13:31] [MOTOR 9] terminat JOB-188 [A] | T:144C V:29mm/s | Hp: 83.4% (-13.56%)
+[13:31] [MOTOR 9] inceput JOB-204 [A] | T:144C V:29mm/s Hp:83.4%
+[13:31] [MOTOR 15] terminat JOB-194 [A] | T:68C V:30mm/s | Hp: 98.5% (-0.79%)
+[13:31] [MOTOR 5] terminat JOB-184 [N] | T:50C V:5mm/s
+[13:31] [MOTOR 15] inceput JOB-210 [A] | T:68C V:30mm/s Hp:98.5%
+[13:31] [MOTOR 5] inceput JOB-200 [N] | T:50C V:5mm/s Hp:98.9%
+[13:31] [MOTOR 1] terminat JOB-180 [N] | T:69C V:5mm/s
+[13:31] [MOTOR 1] inceput JOB-196 [N] | T:69C V:5mm/s Hp:98.2%
+[13:31] [MOTOR 12] terminat JOB-191 [A] | T:113C V:32mm/s | Hp: 96.8% (-1.74%)
+[13:31] [MOTOR 12] inceput JOB-207 [A] | T:113C V:32mm/s Hp:96.8%
+[13:31] [MOTOR 3] terminat JOB-182 [N] | T:91C V:5mm/s
+[13:31] [MOTOR 3] inceput JOB-198 [A] | T:91C V:5mm/s Hp:96.9%
+[13:31] [MOTOR 13] terminat JOB-192 [N] | T:87C V:5mm/s
+[13:31] [MOTOR 13] inceput JOB-208 [A] | T:87C V:5mm/s Hp:97.0%
+[13:31] [MOTOR 6] terminat JOB-201 [N] | T:115C V:5mm/s | Hp: 93.2% (-1.40%)
+[13:31] [MOTOR 6] inceput JOB-217 [N] | T:115C V:5mm/s Hp:93.2%
+[13:31] [MOTOR 8] terminat JOB-203 [A] | T:123C V:27mm/s | Hp: 94.8% (-3.06%)
+[13:31] [MOTOR 8] inceput JOB-219 [N] | T:123C V:27mm/s Hp:94.8%
+[13:31] [MOTOR 14] terminat JOB-193 [A] | T:95C V:31mm/s | Hp: 96.9% (-1.19%)
+[13:31] [MOTOR 7] terminat JOB-202 [A] | T:135C V:28mm/s | Hp: 89.2% (-7.03%)
+[13:31] [MOTOR 14] inceput JOB-209 [A] | T:95C V:31mm/s Hp:96.9%
+[13:31] [MOTOR 7] inceput JOB-218 [A] | T:135C V:28mm/s Hp:89.2%
+[13:31] [MOTOR 4] terminat JOB-199 [A] | T:61C V:32mm/s | Hp: 98.6% (-0.73%)
+[13:31] [MOTOR 4] inceput JOB-215 [A] | T:61C V:32mm/s Hp:98.6%
+[13:31] [MOTOR 2] terminat JOB-197 [A] | T:153C V:32mm/s | Hp: 70.4% (-23.90%)
+[13:31] [MOTOR 2] ! PROTECTIE (153C). Racire...
+[13:31] [MOTOR 9] terminat JOB-204 [A] | T:172C V:28mm/s | Hp: 5.7% (-77.72%)
+[13:31] [MOTOR 9] ! PROTECTIE (172C). Racire...
+[13:31] [MOTOR 16] terminat JOB-211 [A] | T:121C V:31mm/s | Hp: 94.0% (-3.29%)
+[13:31] [MOTOR 16] inceput JOB-227 [A] | T:121C V:31mm/s Hp:94.0%
+[13:31] [MOTOR 15] terminat JOB-210 [A] | T:98C V:28mm/s | Hp: 97.5% (-1.08%)
+[13:31] [MOTOR 15] inceput JOB-226 [A] | T:98C V:28mm/s Hp:97.5%
+[13:31] [MOTOR 5] terminat JOB-200 [N] | T:41C V:5mm/s
+[13:31] [MOTOR 5] inceput JOB-216 [N] | T:41C V:5mm/s Hp:98.9%
+[13:31] [MOTOR 10] REPORNIRE.
+[13:31] [MOTOR 3] terminat JOB-198 [A] | T:121C V:28mm/s | Hp: 94.0% (-2.84%)
+[13:31] [MOTOR 12] terminat JOB-207 [A] | T:146C V:29mm/s | Hp: 81.1% (-15.68%)
+[13:31] [MOTOR 1] terminat JOB-196 [N] | T:59C V:5mm/s
+[13:31] [MOTOR 3] inceput JOB-214 [N] | T:121C V:28mm/s Hp:94.0%
+[13:31] [MOTOR 12] inceput JOB-223 [A] | T:146C V:29mm/s Hp:81.1%
+[13:31] [MOTOR 1] inceput JOB-212 [N] | T:59C V:5mm/s Hp:98.1%
+[13:31] [MOTOR 6] terminat JOB-217 [N] | T:108C V:5mm/s | Hp: 92.3% (-0.81%)
+[13:31] [MOTOR 6] inceput JOB-233 [N] | T:108C V:5mm/s Hp:92.3%
+[13:31] [MOTOR 13] terminat JOB-208 [A] | T:118C V:30mm/s | Hp: 94.5% (-2.53%)
+[13:31] [MOTOR 13] inceput JOB-224 [N] | T:118C V:30mm/s Hp:94.5%
+[13:31] [MOTOR 8] terminat JOB-219 [N] | T:115C V:5mm/s | Hp: 93.5% (-1.36%)
+[13:31] [MOTOR 8] inceput JOB-235 [A] | T:115C V:5mm/s Hp:93.5%
+[13:31] [MOTOR 7] terminat JOB-218 [A] | T:165C V:33mm/s | Hp: 36.3% (-52.92%)
+[13:31] [MOTOR 14] terminat JOB-209 [A] | T:126C V:32mm/s | Hp: 92.7% (-4.14%)
+[13:31] [MOTOR 7] ! PROTECTIE (165C). Racire...
+[13:31] [MOTOR 14] inceput JOB-225 [A] | T:126C V:32mm/s Hp:92.7%
+[13:31] [MOTOR 4] terminat JOB-215 [A] | T:91C V:32mm/s | Hp: 97.6% (-1.05%)
+[13:31] [MOTOR 4] inceput JOB-231 [N] | T:91C V:32mm/s Hp:97.6%
+[13:31] [MOTOR 15] terminat JOB-226 [A] | T:129C V:28mm/s | Hp: 92.6% (-4.84%)
+[13:31] [MOTOR 5] terminat JOB-216 [N] | T:32C V:5mm/s
+[13:31] [MOTOR 15] inceput JOB-242 [N] | T:129C V:28mm/s Hp:92.6%
+[13:31] [MOTOR 5] inceput JOB-232 [A] | T:32C V:5mm/s Hp:98.9%
+[13:31] [MOTOR 1] terminat JOB-212 [N] | T:51C V:5mm/s
+[13:31] [MOTOR 16] terminat JOB-227 [A] | T:155C V:31mm/s | Hp: 64.6% (-29.36%)
+[13:31] [MOTOR 1] inceput JOB-228 [A] | T:51C V:5mm/s Hp:98.1%
+[13:31] [MOTOR 16] ! PROTECTIE (155C). Racire...
+[13:31] [MOTOR 12] terminat JOB-223 [A] | T:177C V:28mm/s [MORT]
+[13:31] [MOTOR 13] terminat JOB-224 [N] | T:110C V:5mm/s | Hp: 93.5% (-0.99%)
+[13:31] [MOTOR 10] terminat JOB-173 [N] | T:76C V:5mm/s
+[13:31] [MOTOR 13] inceput JOB-240 [N] | T:110C V:5mm/s Hp:93.5%
+[13:31] [MOTOR 10] inceput JOB-189 [N] | T:76C V:5mm/s Hp:65.5%
+[13:31] [MOTOR 3] terminat JOB-214 [N] | T:112C V:5mm/s | Hp: 92.8% (-1.28%)
+[13:31] [MOTOR 3] inceput JOB-230 [A] | T:112C V:5mm/s Hp:92.8%
+[13:31] [MOTOR 6] terminat JOB-233 [N] | T:98C V:5mm/s | Hp: 91.8% (-0.54%)
+[13:31] [MOTOR 6] inceput JOB-249 [N] | T:98C V:5mm/s Hp:91.8%
+[13:31] [MOTOR 8] terminat JOB-235 [A] | T:148C V:29mm/s | Hp: 75.9% (-17.62%)
+[13:31] [MOTOR 14] terminat JOB-225 [A] | T:152C V:28mm/s | Hp: 74.5% (-18.20%)
+[13:31] [MOTOR 8] inceput JOB-251 [N] | T:148C V:29mm/s Hp:75.9%
+[13:31] [MOTOR 14] ! PROTECTIE (152C). Racire...
+[13:31] [MOTOR 4] terminat JOB-231 [N] | T:82C V:5mm/s
+[13:31] [MOTOR 4] inceput JOB-247 [A] | T:82C V:5mm/s Hp:97.4%
+[13:31] [MOTOR 15] terminat JOB-242 [N] | T:121C V:5mm/s | Hp: 90.4% (-2.25%)
+[13:31] [MOTOR 15] inceput JOB-258 [N] | T:121C V:5mm/s Hp:90.4%
+[13:31] [MOTOR 5] terminat JOB-232 [A] | T:64C V:33mm/s | Hp: 98.1% (-0.86%)
+[13:31] [MOTOR 5] inceput JOB-248 [N] | T:64C V:33mm/s Hp:98.1%
+[13:31] [MOTOR 1] terminat JOB-228 [A] | T:83C V:33mm/s | Hp: 97.1% (-0.98%)
+[13:31] [MOTOR 1] inceput JOB-244 [N] | T:83C V:33mm/s Hp:97.1%
+[13:31] [MOTOR 13] terminat JOB-240 [N] | T:101C V:5mm/s | Hp: 92.9% (-0.60%)
+[13:31] [MOTOR 10] terminat JOB-189 [N] | T:67C V:5mm/s
+[13:31] [MOTOR 13] inceput JOB-256 [A] | T:101C V:5mm/s Hp:92.9%
+[13:31] [MOTOR 10] inceput JOB-205 [N] | T:67C V:5mm/s Hp:65.4%
+[13:31] [MOTOR 3] terminat JOB-230 [A] | T:141C V:29mm/s | Hp: 82.6% (-10.19%)
+[13:31] [MOTOR 3] inceput JOB-246 [A] | T:141C V:29mm/s Hp:82.6%
+[13:31] [MOTOR 6] terminat JOB-249 [N] | T:89C V:5mm/s
+[13:31] [MOTOR 6] inceput JOB-265 [N] | T:89C V:5mm/s Hp:91.5%
+[13:31] [MOTOR 8] terminat JOB-251 [N] | T:140C V:5mm/s | Hp: 67.7% (-8.16%)
+[13:31] [MOTOR 8] inceput JOB-267 [N] | T:140C V:5mm/s Hp:67.7%
+[13:31] [MOTOR 4] terminat JOB-247 [A] | T:106C V:32mm/s | Hp: 96.1% (-1.31%)
+[13:31] [MOTOR 4] inceput JOB-263 [N] | T:106C V:32mm/s Hp:96.1%
+[13:31] [MOTOR 2] REPORNIRE.
+[13:31] [MOTOR 15] terminat JOB-258 [N] | T:112C V:5mm/s | Hp: 89.1% (-1.32%)
+[13:31] [MOTOR 15] inceput JOB-274 [N] | T:112C V:5mm/s Hp:89.1%
+[13:31] [MOTOR 13] terminat JOB-256 [A] | T:127C V:30mm/s | Hp: 89.2% (-3.70%)
+[13:31] [MOTOR 13] inceput JOB-272 [A] | T:127C V:30mm/s Hp:89.2%
+[13:31] [MOTOR 10] terminat JOB-205 [N] | T:58C V:5mm/s
+[13:31] [MOTOR 5] terminat JOB-248 [N] | T:55C V:5mm/s
+[13:31] [MOTOR 3] terminat JOB-246 [A] | T:171C V:27mm/s | Hp: 9.3% (-73.31%)
+[13:31] [MOTOR 10] inceput JOB-221 [N] | T:58C V:5mm/s Hp:65.4%
+[13:31] [MOTOR 5] inceput JOB-264 [N] | T:55C V:5mm/s Hp:98.0%
+[13:31] [MOTOR 3] ! PROTECTIE (171C). Racire...
+[13:31] [MOTOR 1] terminat JOB-244 [N] | T:74C V:5mm/s
+[13:31] [MOTOR 1] inceput JOB-260 [N] | T:74C V:5mm/s Hp:97.0%
+[13:31] [MOTOR 6] terminat JOB-265 [N] | T:81C V:5mm/s
+[13:31] [MOTOR 6] inceput JOB-281 [N] | T:81C V:5mm/s Hp:91.4%
+[13:31] [MOTOR 8] terminat JOB-267 [N] | T:130C V:5mm/s | Hp: 62.5% (-5.22%)
+[13:31] [MOTOR 8] inceput JOB-283 [N] | T:130C V:5mm/s Hp:62.5%
+[13:31] [MOTOR 4] terminat JOB-263 [N] | T:97C V:5mm/s
+[13:31] [MOTOR 4] inceput JOB-279 [A] | T:97C V:5mm/s Hp:95.6%
+[13:31] [MOTOR 2] terminat JOB-213 [A] | T:119C V:31mm/s | Hp: 55.4% (-2.72%)
+[13:31] [MOTOR 2] inceput JOB-229 [N] | T:119C V:31mm/s Hp:55.4%
+[13:31] [MOTOR 15] terminat JOB-274 [N] | T:103C V:5mm/s | Hp: 88.3% (-0.71%)
+[13:31] [MOTOR 15] inceput JOB-290 [A] | T:103C V:5mm/s Hp:88.3%
+[13:31] [MOTOR 10] terminat JOB-221 [N] | T:50C V:5mm/s
+[13:31] [MOTOR 10] inceput JOB-237 [N] | T:50C V:5mm/s Hp:65.4%
+[13:31] [MOTOR 13] terminat JOB-272 [A] | T:162C V:33mm/s | Hp: 41.7% (-47.47%)
+[13:31] [MOTOR 6] terminat JOB-281 [N] | T:73C V:5mm/s
+[13:31] [MOTOR 13] ! PROTECTIE (162C). Racire...
+[13:31] [MOTOR 6] inceput JOB-297 [A] | T:73C V:5mm/s Hp:91.3%
+[13:31] [MOTOR 5] terminat JOB-264 [N] | T:45C V:5mm/s
+[13:31] [MOTOR 5] inceput JOB-280 [N] | T:45C V:5mm/s Hp:98.0%
+[13:31] [MOTOR 1] terminat JOB-260 [N] | T:64C V:5mm/s
+[13:31] [MOTOR 16] REPORNIRE.
+[13:31] [MOTOR 7] REPORNIRE.
+[13:31] [MOTOR 1] inceput JOB-276 [A] | T:64C V:5mm/s Hp:97.0%
+[13:31] [MOTOR 8] terminat JOB-283 [N] | T:123C V:5mm/s | Hp: 60.1% (-2.35%)
+[13:31] [MOTOR 14] REPORNIRE.
+[13:31] [MOTOR 8] inceput JOB-299 [A] | T:123C V:5mm/s Hp:60.1%
+[13:31] [MOTOR 4] terminat JOB-279 [A] | T:128C V:31mm/s | Hp: 91.1% (-4.48%)
+[13:31] [MOTOR 4] inceput JOB-295 [N] | T:128C V:31mm/s Hp:91.1%
+[13:31] [MOTOR 15] terminat JOB-290 [A] | T:128C V:28mm/s | Hp: 84.7% (-3.69%)
+[13:31] [MOTOR 15] inceput JOB-306 [A] | T:128C V:28mm/s Hp:84.7%
+[13:31] [MOTOR 2] terminat JOB-229 [N] | T:109C V:5mm/s | Hp: 54.2% (-1.16%)
+[13:31] [MOTOR 2] inceput JOB-245 [A] | T:109C V:5mm/s Hp:54.2%
+[13:31] [MOTOR 10] terminat JOB-237 [N] | T:42C V:5mm/s
+[13:31] [MOTOR 10] inceput JOB-253 [N] | T:42C V:5mm/s Hp:65.4%
+[13:31] [MOTOR 6] terminat JOB-297 [A] | T:105C V:28mm/s | Hp: 90.0% (-1.35%)
+[13:31] [MOTOR 6] inceput JOB-313 [A] | T:105C V:28mm/s Hp:90.0%
+[13:31] [MOTOR 5] terminat JOB-280 [N] | T:37C V:5mm/s
+[13:31] [MOTOR 5] inceput JOB-296 [A] | T:37C V:5mm/s Hp:98.0%
+[13:31] [MOTOR 1] terminat JOB-276 [A] | T:93C V:32mm/s | Hp: 96.0% (-1.01%)
+[13:31] [MOTOR 8] terminat JOB-299 [A] | T:148C V:29mm/s | Hp: 46.2% (-13.96%)
+[13:31] [MOTOR 14] terminat JOB-241 [A] | T:113C V:32mm/s | Hp: 61.4% (-1.81%)
+[13:31] [MOTOR 1] inceput JOB-292 [A] | T:93C V:32mm/s Hp:96.0%
+[13:31] [MOTOR 8] inceput JOB-315 [N] | T:148C V:29mm/s Hp:46.2%
+[13:31] [MOTOR 14] inceput JOB-257 [N] | T:113C V:32mm/s Hp:61.4%
+[13:31] [MOTOR 16] terminat JOB-243 [N] | T:76C V:5mm/s
+[13:31] [MOTOR 16] inceput JOB-259 [A] | T:76C V:5mm/s Hp:50.6%
+[13:31] [MOTOR 7] terminat JOB-234 [N] | T:76C V:5mm/s | Hp: 7.3% (-0.11%)
+[13:31] [MOTOR 7] inceput JOB-250 [N] | T:76C V:5mm/s Hp:7.3%
+[13:31] [MOTOR 4] terminat JOB-295 [N] | T:120C V:5mm/s | Hp: 89.2% (-1.96%)
+[13:31] [MOTOR 4] inceput JOB-311 [A] | T:120C V:5mm/s Hp:89.2%
+[13:31] [MOTOR 2] terminat JOB-245 [A] | T:139C V:27mm/s | Hp: 45.2% (-9.02%)
+[13:31] [MOTOR 2] inceput JOB-261 [N] | T:139C V:27mm/s Hp:45.2%
+[13:31] [MOTOR 15] terminat JOB-306 [A] | T:162C V:32mm/s | Hp: 39.8% (-44.90%)
+[13:31] [MOTOR 15] ! PROTECTIE (162C). Racire...
+[13:31] [MOTOR 10] terminat JOB-253 [N] | T:33C V:5mm/s
+[13:31] [MOTOR 5] terminat JOB-296 [A] | T:63C V:32mm/s | Hp: 97.4% (-0.67%)
+[13:31] [MOTOR 10] inceput JOB-269 [N] | T:33C V:5mm/s Hp:65.4%
+[13:31] [MOTOR 5] inceput JOB-312 [A] | T:63C V:32mm/s Hp:97.4%
+[13:31] [MOTOR 14] terminat JOB-257 [N] | T:105C V:5mm/s | Hp: 60.7% (-0.74%)
+[13:31] [MOTOR 8] terminat JOB-315 [N] | T:140C V:5mm/s | Hp: 37.6% (-8.57%)
+[13:31] [MOTOR 14] inceput JOB-273 [N] | T:105C V:5mm/s Hp:60.7%
+[13:31] [MOTOR 8] inceput JOB-331 [A] | T:140C V:5mm/s Hp:37.6%
+[13:31] [MOTOR 16] terminat JOB-259 [A] | T:105C V:29mm/s | Hp: 49.3% (-1.32%)
+[13:31] [MOTOR 16] inceput JOB-275 [N] | T:105C V:29mm/s Hp:49.3%
+[13:31] [MOTOR 6] terminat JOB-313 [A] | T:139C V:27mm/s | Hp: 80.2% (-9.80%)
+[13:31] [MOTOR 6] inceput JOB-329 [N] | T:139C V:27mm/s Hp:80.2%
+[13:31] [MOTOR 7] terminat JOB-250 [N] | T:68C V:5mm/s | Hp: 7.3% (-0.06%)
+[13:31] [MOTOR 1] terminat JOB-292 [A] | T:125C V:28mm/s | Hp: 92.2% (-3.80%)
+[13:31] [MOTOR 7] inceput JOB-266 [N] | T:68C V:5mm/s Hp:7.3%
+[13:31] [MOTOR 1] inceput JOB-308 [A] | T:125C V:28mm/s Hp:92.2%
+[13:31] [MOTOR 4] terminat JOB-311 [A] | T:154C V:32mm/s | Hp: 62.4% (-26.77%)
+[13:31] [MOTOR 4] ! PROTECTIE (154C). Racire...
+[13:31] [MOTOR 10] terminat JOB-269 [N] | T:26C V:5mm/s
+[13:31] [MOTOR 10] inceput JOB-285 [A] | T:26C V:5mm/s Hp:65.4%
+[13:31] [MOTOR 2] terminat JOB-261 [N] | T:131C V:5mm/s | Hp: 40.6% (-4.63%)
+[13:31] [MOTOR 2] inceput JOB-277 [N] | T:131C V:5mm/s Hp:40.6%
+[13:31] [MOTOR 5] terminat JOB-312 [A] | T:93C V:30mm/s | Hp: 96.4% (-0.95%)
+[13:31] [MOTOR 5] inceput JOB-328 [A] | T:93C V:30mm/s Hp:96.4%
+[13:31] [MOTOR 1] terminat JOB-308 [A] | T:149C V:28mm/s | Hp: 77.8% (-14.37%)
+[13:31] [MOTOR 14] terminat JOB-273 [N] | T:97C V:5mm/s
+[13:31] [MOTOR 1] inceput JOB-324 [N] | T:149C V:28mm/s Hp:77.8%
+[13:31] [MOTOR 14] inceput JOB-289 [A] | T:97C V:5mm/s Hp:60.2%
+[13:31] [MOTOR 6] terminat JOB-329 [N] | T:130C V:5mm/s | Hp: 75.7% (-4.49%)
+[13:31] [MOTOR 6] inceput JOB-345 [A] | T:130C V:5mm/s Hp:75.7%
+[13:31] [MOTOR 16] terminat JOB-275 [N] | T:95C V:5mm/s | Hp: 48.9% (-0.44%)
+[13:31] [MOTOR 8] terminat JOB-331 [A] | T:173C V:31mm/s [MORT]
+[13:31] [MOTOR 16] inceput JOB-291 [A] | T:95C V:5mm/s Hp:48.9%
+[13:31] [MOTOR 7] terminat JOB-266 [N] | T:59C V:5mm/s | Hp: 7.2% (-0.03%)
+[13:31] [MOTOR 7] inceput JOB-282 [A] | T:59C V:5mm/s Hp:7.2%
+[13:31] [MOTOR 13] REPORNIRE.
+[13:31] [MOTOR 5] terminat JOB-328 [A] | T:118C V:28mm/s | Hp: 94.4% (-2.04%)
+[13:31] [MOTOR 5] inceput JOB-344 [N] | T:118C V:28mm/s Hp:94.4%
+[13:31] [MOTOR 2] terminat JOB-277 [N] | T:122C V:5mm/s | Hp: 37.9% (-2.69%)
+[13:31] [MOTOR 10] terminat JOB-285 [A] | T:60C V:30mm/s | Hp: 64.6% (-0.78%)
+[13:31] [MOTOR 2] inceput JOB-293 [A] | T:122C V:5mm/s Hp:37.9%
+[13:31] [MOTOR 10] inceput JOB-301 [A] | T:60C V:30mm/s Hp:64.6%
+[13:31] [MOTOR 14] terminat JOB-289 [A] | T:129C V:31mm/s | Hp: 55.0% (-5.20%)
+[13:31] [MOTOR 14] inceput JOB-305 [N] | T:129C V:31mm/s Hp:55.0%
+[13:31] [MOTOR 1] terminat JOB-324 [N] | T:140C V:5mm/s | Hp: 68.1% (-9.72%)
+[13:31] [MOTOR 1] inceput JOB-340 [N] | T:140C V:5mm/s Hp:68.1%
+[13:31] [MOTOR 6] terminat JOB-345 [A] | T:161C V:33mm/s | Hp: 37.2% (-38.47%)
+[13:31] [MOTOR 6] ! PROTECTIE (161C). Racire...
+[13:31] [MOTOR 7] terminat JOB-282 [A] | T:87C V:29mm/s | Hp: 6.5% (-0.78%)
+[13:31] [MOTOR 7] inceput JOB-298 [N] | T:87C V:29mm/s Hp:6.5%
+[13:31] [MOTOR 16] terminat JOB-291 [A] | T:127C V:28mm/s | Hp: 44.4% (-4.44%)
+[13:31] [MOTOR 13] terminat JOB-288 [N] | T:80C V:5mm/s | Hp: 19.1% (-0.12%)
+[13:31] [MOTOR 16] inceput JOB-307 [N] | T:127C V:28mm/s Hp:44.4%
+[13:31] [MOTOR 13] inceput JOB-304 [N] | T:80C V:5mm/s Hp:19.1%
+[13:31] [MOTOR 5] terminat JOB-344 [N] | T:110C V:5mm/s | Hp: 93.3% (-1.02%)
+[13:31] [MOTOR 5] inceput JOB-360 [N] | T:110C V:5mm/s Hp:93.3%
+[13:31] [MOTOR 2] terminat JOB-293 [A] | T:148C V:29mm/s | Hp: 24.6% (-13.31%)
+[13:31] [MOTOR 2] inceput JOB-309 [A] | T:148C V:29mm/s Hp:24.6%
+[13:31] [MOTOR 10] terminat JOB-301 [A] | T:91C V:31mm/s | Hp: 63.6% (-1.02%)
+[13:31] [MOTOR 10] inceput JOB-317 [A] | T:91C V:31mm/s Hp:63.6%
+[13:31] [MOTOR 14] terminat JOB-305 [N] | T:121C V:5mm/s | Hp: 52.8% (-2.27%)
+[13:31] [MOTOR 1] terminat JOB-340 [N] | T:132C V:5mm/s | Hp: 63.5% (-4.62%)
+[13:31] [MOTOR 14] inceput JOB-321 [A] | T:121C V:5mm/s Hp:52.8%
+[13:31] [MOTOR 1] inceput JOB-356 [N] | T:132C V:5mm/s Hp:63.5%
+[13:31] [MOTOR 7] terminat JOB-298 [N] | T:79C V:5mm/s | Hp: 6.3% (-0.12%)
+[13:31] [MOTOR 7] inceput JOB-314 [A] | T:79C V:5mm/s Hp:6.3%
+[13:31] [MOTOR 13] terminat JOB-304 [N] | T:71C V:5mm/s | Hp: 19.0% (-0.07%)
+[13:31] [MOTOR 13] inceput JOB-320 [A] | T:71C V:5mm/s Hp:19.0%
+[13:31] [MOTOR 16] terminat JOB-307 [N] | T:119C V:5mm/s | Hp: 42.4% (-2.00%)
+[13:31] [MOTOR 15] REPORNIRE.
+[13:31] [MOTOR 16] inceput JOB-323 [N] | T:119C V:5mm/s Hp:42.4%
+[13:31] [MOTOR 5] terminat JOB-360 [N] | T:102C V:5mm/s | Hp: 92.8% (-0.58%)
+[13:31] [MOTOR 5] inceput JOB-376 [N] | T:102C V:5mm/s Hp:92.8%
+[13:31] [MOTOR 4] REPORNIRE.
+[13:31] [MOTOR 2] terminat JOB-309 [A] | T:177C V:33mm/s [MORT]
+[13:31] [MOTOR 14] terminat JOB-321 [A] | T:147C V:32mm/s | Hp: 40.1% (-12.66%)
+[13:31] [MOTOR 1] terminat JOB-356 [N] | T:124C V:5mm/s | Hp: 60.9% (-2.60%)
+[13:31] [MOTOR 10] terminat JOB-317 [A] | T:122C V:30mm/s | Hp: 60.3% (-3.31%)
+[13:31] [MOTOR 14] inceput JOB-337 [N] | T:147C V:32mm/s Hp:40.1%
+[13:31] [MOTOR 1] inceput JOB-372 [N] | T:124C V:5mm/s Hp:60.9%
+[13:31] [MOTOR 10] inceput JOB-333 [A] | T:122C V:30mm/s Hp:60.3%
+[13:31] [MOTOR 15] terminat JOB-322 [A] | T:111C V:28mm/s | Hp: 16.3% (-1.45%)
+[13:31] [MOTOR 16] terminat JOB-323 [N] | T:112C V:5mm/s | Hp: 41.4% (-1.05%)
+[13:31] [MOTOR 15] inceput JOB-338 [N] | T:111C V:28mm/s Hp:16.3%
+[13:31] [MOTOR 16] inceput JOB-339 [A] | T:112C V:5mm/s Hp:41.4%
+[13:31] [MOTOR 7] terminat JOB-314 [A] | T:111C V:32mm/s | Hp: 4.3% (-2.02%)
+[13:31] [MOTOR 7] inceput JOB-330 [A] | T:111C V:32mm/s Hp:4.3%
+[13:31] [MOTOR 13] terminat JOB-320 [A] | T:106C V:31mm/s | Hp: 17.3% (-1.72%)
+[13:31] [MOTOR 13] inceput JOB-336 [N] | T:106C V:31mm/s Hp:17.3%
+[13:31] [MOTOR 4] terminat JOB-327 [A] | T:116C V:33mm/s | Hp: 47.4% (-2.21%)
+[13:31] [MOTOR 4] inceput JOB-343 [N] | T:116C V:33mm/s Hp:47.4%
+[13:31] [MOTOR 5] terminat JOB-376 [N] | T:93C V:5mm/s
+[13:31] [MOTOR 5] inceput JOB-392 [A] | T:93C V:5mm/s Hp:92.4%
+[13:31] [MOTOR 10] terminat JOB-333 [A] | T:147C V:28mm/s | Hp: 47.5% (-12.83%)
+[13:31] [MOTOR 10] inceput JOB-349 [N] | T:147C V:28mm/s Hp:47.5%
+[13:31] [MOTOR 14] terminat JOB-337 [N] | T:139C V:5mm/s | Hp: 32.7% (-7.46%)
+[13:31] [MOTOR 14] inceput JOB-353 [N] | T:139C V:5mm/s Hp:32.7%
+[13:31] [MOTOR 1] terminat JOB-372 [N] | T:116C V:5mm/s | Hp: 59.2% (-1.64%)
+[13:31] [MOTOR 1] inceput JOB-388 [N] | T:116C V:5mm/s Hp:59.2%
+[13:31] [MOTOR 15] terminat JOB-338 [N] | T:102C V:5mm/s | Hp: 15.6% (-0.69%)
+[13:31] [MOTOR 16] terminat JOB-339 [A] | T:144C V:32mm/s | Hp: 27.7% (-13.73%)
+[13:31] [MOTOR 15] inceput JOB-354 [A] | T:102C V:5mm/s Hp:15.6%
+[13:31] [MOTOR 16] inceput JOB-355 [N] | T:144C V:32mm/s Hp:27.7%
+[13:31] [MOTOR 7] terminat JOB-330 [A] | T:145C V:29mm/s [MORT]
+[13:31] [MOTOR 13] terminat JOB-336 [N] | T:97C V:5mm/s | Hp: 16.8% (-0.46%)
+[13:31] [MOTOR 13] inceput JOB-352 [N] | T:97C V:5mm/s Hp:16.8%
+[13:31] [MOTOR 5] terminat JOB-392 [A] | T:118C V:32mm/s | Hp: 90.2% (-2.23%)
+[13:31] [MOTOR 4] terminat JOB-343 [N] | T:107C V:5mm/s | Hp: 46.5% (-0.93%)
+[13:31] [MOTOR 4] inceput JOB-359 [A] | T:107C V:5mm/s Hp:46.5%
+[13:31] [MOTOR 6] REPORNIRE.
+[13:31] [MOTOR 10] terminat JOB-349 [N] | T:138C V:5mm/s | Hp: 39.2% (-8.26%)
+[13:31] [MOTOR 10] inceput JOB-365 [A] | T:138C V:5mm/s Hp:39.2%
+[13:31] [MOTOR 14] terminat JOB-353 [N] | T:129C V:5mm/s | Hp: 28.0% (-4.62%)
+[13:31] [MOTOR 14] inceput JOB-369 [A] | T:129C V:5mm/s Hp:28.0%
+[13:31] [MOTOR 16] terminat JOB-355 [N] | T:137C V:5mm/s | Hp: 21.7% (-5.99%)
+[13:31] [MOTOR 16] inceput JOB-371 [A] | T:137C V:5mm/s Hp:21.7%
+[13:31] [MOTOR 1] terminat JOB-388 [N] | T:106C V:5mm/s | Hp: 58.3% (-0.94%)
+[13:31] [MOTOR 15] terminat JOB-354 [A] | T:134C V:30mm/s | Hp: 9.0% (-6.58%)
+[13:31] [MOTOR 15] inceput JOB-370 [A] | T:134C V:30mm/s Hp:9.0%
+[13:31] [MOTOR 13] terminat JOB-352 [N] | T:88C V:5mm/s | Hp: 16.6% (-0.25%)
+[13:31] [MOTOR 13] inceput JOB-368 [A] | T:88C V:5mm/s Hp:16.6%
+[13:31] [MOTOR 6] terminat JOB-361 [N] | T:77C V:5mm/s | Hp: 16.4% (-0.11%)
+[13:31] [MOTOR 6] inceput JOB-377 [A] | T:77C V:5mm/s Hp:16.4%
+[13:31] [MOTOR 4] terminat JOB-359 [A] | T:141C V:27mm/s | Hp: 34.8% (-11.69%)
+[13:31] [MOTOR 4] inceput JOB-375 [N] | T:141C V:27mm/s Hp:34.8%
+[13:31] [MOTOR 10] terminat JOB-365 [A] | T:169C V:29mm/s [MORT]
+[13:31] [MOTOR 14] terminat JOB-369 [A] | T:164C V:30mm/s [MORT]
+[13:31] [MOTOR 16] terminat JOB-371 [A] | T:171C V:28mm/s [MORT]
+[13:31] [MOTOR 15] terminat JOB-370 [A] | T:165C V:31mm/s [MORT]
+[13:31] [MOTOR 13] terminat JOB-368 [A] | T:116C V:30mm/s | Hp: 14.4% (-2.15%)
+[13:31] [MOTOR 13] inceput JOB-384 [A] | T:116C V:30mm/s Hp:14.4%
+[13:31] [MOTOR 6] terminat JOB-377 [A] | T:104C V:33mm/s | Hp: 15.0% (-1.35%)
+[13:31] [MOTOR 6] inceput JOB-393 [N] | T:104C V:33mm/s Hp:15.0%
+[13:31] [MOTOR 4] terminat JOB-375 [N] | T:132C V:5mm/s | Hp: 29.2% (-5.59%)
+[13:31] [MOTOR 4] inceput JOB-391 [A] | T:132C V:5mm/s Hp:29.2%
+[13:31] [MOTOR 13] terminat JOB-384 [A] | T:146C V:31mm/s | Hp: 0.6% (-13.85%)
+[13:31] [MOTOR 6] terminat JOB-393 [N] | T:97C V:5mm/s | Hp: 14.7% (-0.38%)
+[13:31] [MOTOR 4] terminat JOB-391 [A] | T:162C V:31mm/s [MORT]
+[13:31] [SISTEM] >>> Oprire Motoare... <<<
+[13:31] [MOTOR 1] OFFLINE | Final HP: 57.78% [UZURA MEDIE]
+[13:31] [MOTOR 5] OFFLINE | Final HP: 89.02% [UZURA NORMALA]
+[13:31] [MOTOR 14] OFFLINE | Final HP: 0.00% [DEFECT]
+[13:31] [MOTOR 11] OFFLINE | Final HP: 0.00% [DEFECT]
+[13:31] [MOTOR 13] OFFLINE | Final HP: 0.00% [DEFECT]
+[13:31] [MOTOR 10] OFFLINE | Final HP: 0.00% [DEFECT]
+[13:31] [MOTOR 16] OFFLINE | Final HP: 0.00% [DEFECT]
+[13:31] [MOTOR 3] OFFLINE | Final HP: 0.00% [DEFECT]
+[13:31] [MOTOR 15] OFFLINE | Final HP: 0.00% [DEFECT]
+[13:31] [MOTOR 9] OFFLINE | Final HP: 0.00% [DEFECT]
+[13:31] [MOTOR 7] OFFLINE | Final HP: 0.00% [DEFECT]
+[13:31] [MOTOR 12] OFFLINE | Final HP: 0.00% [DEFECT]
+[13:31] [MOTOR 6] OFFLINE | Final HP: 14.52% [CRITIC]
+[13:31] [MOTOR 2] OFFLINE | Final HP: 0.00% [DEFECT]
+[13:31] [MOTOR 8] OFFLINE | Final HP: 0.00% [DEFECT]
+[13:31] [MOTOR 4] OFFLINE | Final HP: 0.00% [DEFECT]
 --- STOP SESIUNE ---
