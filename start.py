@@ -11,7 +11,7 @@ import queue
 NUMAR_NUCLEE = multiprocessing.cpu_count()
 TEMP_AMBIENTALA = 25.0
 TEMP_NOMINALA = 50.0   
-TEMP_CRITICA = 180.0   
+TEMP_CRITICA = 150.0   
 RATE_RACIRE = 25.0     
 # --- PARAMETRI SARCINA ---
 INCALZIRE_NORMAL = 15.0
@@ -157,23 +157,20 @@ class Motor:
         return dauna_totala
 
     async def _executa_task(self, task_id, este_agresiv):
+        tip_task = "A" if este_agresiv else "N"
+        durata = random.uniform(0.3, 0.6)
         if self.sanatate <= 0: return
-
-        # Protectie Termica
         if self.temperatura > TEMP_CRITICA:
-            self._log(f"!!! PROTECTIE ({self.temperatura:.0f}C). Racire...")
+            self._log(f"! PROTECTIE ({self.temperatura:.0f}C). Racire...")
             while self.temperatura > (TEMP_NOMINALA + 40):
                 if self.sanatate <= 0 or not self.running: break
                 await asyncio.sleep(0.2)
                 self._simulare_fizica(0.2, sarcina=False)
-            
             if self.sanatate <= 0: return 
             self._log("REPORNIRE.")
-
-        tip_task = "AGRESIV" if este_agresiv else "NORMAL"
-        durata = random.uniform(0.3, 0.6)
+        else:
+            self._log(f"inceput {task_id} [{tip_task}] | T:{self.temperatura:.0f}C V:{self.vibratie:.0f}mm/s{self.sanatate:.1f}")
         
-        # CPU Load (trimis in executor)
         loop = asyncio.get_running_loop()
         await loop.run_in_executor(self.executor, sum, [1]*5000)
         await asyncio.sleep(durata)
@@ -190,7 +187,7 @@ class Motor:
             # Fortam 0.0% vizual daca a murit
             self.sanatate = 0.0
 
-        self._log(f"DONE {task_id} [{tip_task}] | T:{self.temperatura:.0f}C V:{self.vibratie:.0f}mm/s{hp_info}")
+        self._log(f"terminat {task_id} [{tip_task}] | T:{self.temperatura:.0f}C V:{self.vibratie:.0f}mm/s{hp_info}")
 
 # --- LOGGER ---
 def logger_thread(q):
