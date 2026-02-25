@@ -163,7 +163,7 @@ class Motor:
         if self.sanatate <= 0: return
         if self.temperatura > TEMP_CRITICA:
             self._log(f"! PROTECTIE ({self.temperatura:.0f}C). Racire...")
-            while self.temperatura > (TEMP_NOMINALA + 40):
+            while self.temperatura > (TEMP_NOMINALA + 10):
                 if self.sanatate <= 0 or not self.running: break
                 await asyncio.sleep(0.2)
                 self._simulare_fizica(0.2, sarcina=False)
@@ -241,7 +241,7 @@ async def main():
         await asyncio.gather(*(mot.queue.join() for mot in motoare))
         
         log_sys(log_q, ">>> Oprire Motoare... <<<")
-        # Oprirea este acum idempotenta si sigura
+        # Oprirea este acum idepententa si sigura
         await asyncio.gather(*(mot.stop() for mot in motoare))
         
         # Semnal de oprire pentru logger DOAR DUPA ce totul e gata
@@ -253,7 +253,7 @@ async def main():
     plt.figure()
     plt.get_current_fig_manager().resize(1080,720)
     for motor in motoare:
-        plt.plot(motor.hp_history, label=f"{motor.motor_id+1}")
+        plt.plot(motor.task_count,motor.hp_history, label=f"{motor.motor_id+1}")
 
     plt.xlabel("Evenimente / Job-uri")
     plt.ylabel("HP (%)")
