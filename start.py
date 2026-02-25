@@ -209,7 +209,7 @@ def logger_thread(q):
             break
         
         ts, msg = item
-        ts_str = ts.strftime('%H:%M:%S.%f')[:-3]
+        ts_str = ts.strftime('%H:%M:%S')[:-3]
         log_line = f"[{ts_str}] {msg}"
         
         print(log_line, flush=True)
@@ -220,18 +220,13 @@ def log_sys(q, m): q.put((datetime.now(), f"[SISTEM] {m}"))
 
 # --- MAIN ---
 async def main():
-    # MODIFICARE CRITICA: Folosim Queue normal (threading), nu Multiprocessing Manager
-    # Deoarece motoarele sunt instante in procesul principal, nu avem nevoie de IPC pentru loguri.
-    # Asta elimina duplicarea si erorile de flush.
+
     log_q = queue.Queue()
-    
-    # Logger-ul nu mai este daemon, il controlam manual
     t_log = threading.Thread(target=logger_thread, args=(log_q,))
     t_log.start()
 
     log_sys(log_q, f"START SIMULARE ({NUMAR_NUCLEE} MOTOARE)")
 
-    # Context Manager pentru Executor asigura inchiderea corecta a proceselor de calcul
     with concurrent.futures.ProcessPoolExecutor(max_workers=NUMAR_NUCLEE) as exc:
         motoare = [Motor(i+1, log_q, exc) for i in range(NUMAR_NUCLEE)]
         await asyncio.gather(*(mot.start() for mot in motoare))
